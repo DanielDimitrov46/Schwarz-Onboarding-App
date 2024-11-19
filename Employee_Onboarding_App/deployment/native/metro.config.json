@@ -1,8 +1,8 @@
 {
   "watchFolders": [
-    "D:/UKTC PROGRAMMING/Mendix-Projects/Employee_Onboarding_App/theme",
-    "D:/UKTC PROGRAMMING/Mendix-Projects/Employee_Onboarding_App/javascriptsource",
-    "D:/UKTC PROGRAMMING/Mendix-Projects/Employee_Onboarding_App/themesource",
+    "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/theme",
+    "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/javascriptsource",
+    "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource",
     "C:/Programming/10.6.11.39264/modeler/tools/node/node_modules"
   ],
   "resolver": {

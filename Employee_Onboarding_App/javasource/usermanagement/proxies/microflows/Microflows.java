@@ -254,4 +254,23 @@ public final class Microflows
 			.execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> system.proxies.UserRole.initialize(context, obj));
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_User_FieldValidationBuilder(
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.VAL_User_FieldValidation");
+		builder = builder.withParam("AccountPasswordData", _accountPasswordData);
+		return builder;
+	}
+
+	public static void vAL_User_FieldValidation(
+		IContext context,
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		vAL_User_FieldValidationBuilder(
+				_accountPasswordData
+			)
+			.execute(context);
+	}
 }

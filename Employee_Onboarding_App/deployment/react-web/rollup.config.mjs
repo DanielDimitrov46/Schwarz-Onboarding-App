@@ -36,7 +36,7 @@ export default {
         mendixResolve(
             "C:/Programming/10.6.11.39264/modeler/tools/node/web-resolutions.json",
             "C:/Programming/10.6.11.39264/modeler/tools/node/node_modules",
-            "D:/UKTC PROGRAMMING/Mendix-Projects/Employee_Onboarding_App/deployment/web/cachetag.txt"
+            "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/deployment/web/cachetag.txt"
         ),
         nodePolyfills(),
         esbuild({
@@ -80,14 +80,14 @@ export default {
             minify: isProduction,
         }),
         generatePrecacheServiceWorker({
-            deploymentDir: "D:/UKTC PROGRAMMING/Mendix-Projects/Employee_Onboarding_App/deployment",
+            deploymentDir: "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/deployment",
         }),
         mendixCopy({
             targets: [
                 {
                     dest: "dist",
                     exclude: [".js", ".mjs"],
-                    src: "D:/UKTC PROGRAMMING/Mendix-Projects/Employee_Onboarding_App/deployment/web/widgets",
+                    src: "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/deployment/web/widgets",
                 },
                 {
                     dest: "dist/wa-sqlite-async.wasm",
