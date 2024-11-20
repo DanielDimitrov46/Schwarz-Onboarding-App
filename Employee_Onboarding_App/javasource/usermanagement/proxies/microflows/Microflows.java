@@ -106,6 +106,16 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_CreateAdminBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_CreateAdmin");
+		return builder;
+	}
+
+	public static void aCT_User_CreateAdmin(IContext context)
+	{
+		aCT_User_CreateAdminBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_CreateTraineeBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_CreateTrainee");
@@ -253,6 +263,25 @@ public final class Microflows
 			)
 			.execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> system.proxies.UserRole.initialize(context, obj));
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_Trainee_FieldValidationBuilder(
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.VAL_Trainee_FieldValidation");
+		builder = builder.withParam("AccountPasswordData", _accountPasswordData);
+		return builder;
+	}
+
+	public static void vAL_Trainee_FieldValidation(
+		IContext context,
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		vAL_Trainee_FieldValidationBuilder(
+				_accountPasswordData
+			)
+			.execute(context);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_User_FieldValidationBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData

@@ -32,6 +32,7 @@ public class User extends administration.proxies.Account
 		IsAnonymous("IsAnonymous"),
 		User_ProfilePicture("UserManagement.User_ProfilePicture"),
 		User_Country("UserManagement.User_Country"),
+		User_Department("UserManagement.User_Department"),
 		User_UserRole("UserManagement.User_UserRole"),
 		UserRoles("System.UserRoles"),
 		User_Language("System.User_Language"),
@@ -272,6 +273,53 @@ public class User extends administration.proxies.Account
 			getMendixObject().setValue(context, MemberNames.User_Country.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.User_Country.toString(), user_country.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of User_Department
+	 */
+	public final usermanagement.proxies.Department getUser_Department() throws com.mendix.core.CoreException
+	{
+		return getUser_Department(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of User_Department
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final usermanagement.proxies.Department getUser_Department(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		usermanagement.proxies.Department result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.User_Department.toString());
+		if (identifier != null) {
+			result = usermanagement.proxies.Department.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of User_Department
+	 * @param user_department
+	 */
+	public final void setUser_Department(usermanagement.proxies.Department user_department)
+	{
+		setUser_Department(getContext(), user_department);
+	}
+
+	/**
+	 * Set value of User_Department
+	 * @param context
+	 * @param user_department
+	 */
+	public final void setUser_Department(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.Department user_department)
+	{
+		if (user_department == null) {
+			getMendixObject().setValue(context, MemberNames.User_Department.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.User_Department.toString(), user_department.getMendixObject().getId());
 		}
 	}
 
