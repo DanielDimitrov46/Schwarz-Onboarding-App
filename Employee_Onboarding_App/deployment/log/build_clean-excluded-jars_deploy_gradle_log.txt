@@ -2,7 +2,7 @@ Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot, JAVA_VERSION=11.0.16.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.16.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.16.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
 The client will now receive all logging from the daemon (pid: 52620). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-52620.out.log
-Starting 5th build in daemon [uptime: 49 mins 10.675 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 17% of 384 MiB]
+Starting 6th build in daemon [uptime: 2 hrs 21 mins 30.248 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 17% of 384 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -31,7 +31,7 @@ Caching disabled for task ':clean-excluded-jars' because:
 Task ':clean-excluded-jars' is not up-to-date because:
   Task has not declared any outputs despite executing actions.
 Resolve mutations for :copyDeploymentArtifacts (Thread[Execution worker,5,main]) started.
-:copyDeploymentArtifacts (Thread[Execution worker,5,main]) started.
+:copyDeploymentArtifacts (Thread[included builds,5,main]) started.
 
 > Task :copyDeploymentArtifacts
 Caching disabled for task ':copyDeploymentArtifacts' because:
@@ -39,7 +39,7 @@ Caching disabled for task ':copyDeploymentArtifacts' because:
 Task ':copyDeploymentArtifacts' is not up-to-date because:
   Task is untracked because: Always copy deployment artifacts
 Not watching anything anymore
-Resolve mutations for :copyLibs (Thread[Execution worker,5,main]) started.
+Resolve mutations for :copyLibs (Thread[included builds,5,main]) started.
 :copyLibs (Thread[Execution worker,5,main]) started.
 
 > Task :copyLibs UP-TO-DATE
@@ -47,22 +47,22 @@ Caching disabled for task ':copyLibs' because:
   Build cache is disabled
 Skipping task ':copyLibs' as it is up-to-date.
 Resolve mutations for :copyResources (Thread[Execution worker,5,main]) started.
-:copyResources (Thread[Execution worker Thread 8,5,main]) started.
+:copyResources (Thread[included builds,5,main]) started.
 
 > Task :copyResources NO-SOURCE
 Skipping task ':copyResources' as it has no source files and no previous output files.
-Resolve mutations for :unzipDataSnapshot (Thread[Execution worker Thread 8,5,main]) started.
-:unzipDataSnapshot (Thread[Execution worker Thread 8,5,main]) started.
+Resolve mutations for :unzipDataSnapshot (Thread[included builds,5,main]) started.
+:unzipDataSnapshot (Thread[Execution worker,5,main]) started.
 
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
-Resolve mutations for :deploy (Thread[Execution worker Thread 2,5,main]) started.
-:deploy (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :deploy (Thread[included builds,5,main]) started.
+:deploy (Thread[Execution worker,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 1s
+BUILD SUCCESSFUL in 7s
 3 actionable tasks: 1 executed, 2 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment]
 
