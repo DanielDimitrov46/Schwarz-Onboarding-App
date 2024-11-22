@@ -184,25 +184,6 @@ public final class Microflows
 			)
 			.execute(context);
 	}
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveTraineeBuilder(
-		administration.proxies.AccountPasswordData _accountPasswordData
-	)
-	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_SaveTrainee");
-		builder = builder.withParam("AccountPasswordData", _accountPasswordData);
-		return builder;
-	}
-
-	public static void aCT_User_SaveTrainee(
-		IContext context,
-		administration.proxies.AccountPasswordData _accountPasswordData
-	)
-	{
-		aCT_User_SaveTraineeBuilder(
-				_accountPasswordData
-			)
-			.execute(context);
-	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveUserBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData
 	)
@@ -242,6 +223,26 @@ public final class Microflows
 	public static java.util.List<usermanagement.proxies.User> dS_Trainee_Retrieve(IContext context)
 	{
 		Object result = dS_Trainee_RetrieveBuilder().execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.User.initialize(context, obj));
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_User_RetrieveUserDepartmentBuilder(
+		usermanagement.proxies.User _user
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.DS_User_RetrieveUserDepartment");
+		builder = builder.withParam("User", _user);
+		return builder;
+	}
+
+	public static java.util.List<usermanagement.proxies.User> dS_User_RetrieveUserDepartment(
+		IContext context,
+		usermanagement.proxies.User _user
+	)
+	{
+		Object result = dS_User_RetrieveUserDepartmentBuilder(
+				_user
+			)
+			.execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.User.initialize(context, obj));
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_UserRole_RetrieveBuilder(
