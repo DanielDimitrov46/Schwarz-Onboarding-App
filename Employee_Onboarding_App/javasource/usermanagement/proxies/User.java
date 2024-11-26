@@ -16,8 +16,7 @@ public class User extends administration.proxies.Account
 	 */
 	public enum MemberNames
 	{
-		Status("Status"),
-		Department("Department"),
+		User_Status("User_Status"),
 		FullName("FullName"),
 		Email("Email"),
 		IsLocalUser("IsLocalUser"),
@@ -93,21 +92,21 @@ public class User extends administration.proxies.Account
 	}
 
 	/**
-	 * Get value of Status
-	 * @param status
+	 * Get value of User_Status
+	 * @param user_status
 	 */
-	public final usermanagement.proxies.ENUM_User_Status getStatus()
+	public final usermanagement.proxies.ENUM_User_Status getUser_Status()
 	{
-		return getStatus(getContext());
+		return getUser_Status(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of Status
+	 * @return value of User_Status
 	 */
-	public final usermanagement.proxies.ENUM_User_Status getStatus(com.mendix.systemwideinterfaces.core.IContext context)
+	public final usermanagement.proxies.ENUM_User_Status getUser_Status(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		Object obj = getMendixObject().getValue(context, MemberNames.Status.toString());
+		Object obj = getMendixObject().getValue(context, MemberNames.User_Status.toString());
 		if (obj == null) {
 			return null;
 		}
@@ -115,70 +114,25 @@ public class User extends administration.proxies.Account
 	}
 
 	/**
-	 * Set value of Status
-	 * @param status
+	 * Set value of User_Status
+	 * @param user_status
 	 */
-	public final void setStatus(usermanagement.proxies.ENUM_User_Status status)
+	public final void setUser_Status(usermanagement.proxies.ENUM_User_Status user_status)
 	{
-		setStatus(getContext(), status);
+		setUser_Status(getContext(), user_status);
 	}
 
 	/**
-	 * Set value of Status
+	 * Set value of User_Status
 	 * @param context
-	 * @param status
+	 * @param user_status
 	 */
-	public final void setStatus(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.ENUM_User_Status status)
+	public final void setUser_Status(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.ENUM_User_Status user_status)
 	{
-		if (status != null) {
-			getMendixObject().setValue(context, MemberNames.Status.toString(), status.toString());
+		if (user_status != null) {
+			getMendixObject().setValue(context, MemberNames.User_Status.toString(), user_status.toString());
 		} else {
-			getMendixObject().setValue(context, MemberNames.Status.toString(), null);
-		}
-	}
-
-	/**
-	 * Get value of Department
-	 * @param department
-	 */
-	public final usermanagement.proxies.ENUM_User_Departments getDepartment()
-	{
-		return getDepartment(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of Department
-	 */
-	public final usermanagement.proxies.ENUM_User_Departments getDepartment(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		Object obj = getMendixObject().getValue(context, MemberNames.Department.toString());
-		if (obj == null) {
-			return null;
-		}
-		return usermanagement.proxies.ENUM_User_Departments.valueOf((java.lang.String) obj);
-	}
-
-	/**
-	 * Set value of Department
-	 * @param department
-	 */
-	public final void setDepartment(usermanagement.proxies.ENUM_User_Departments department)
-	{
-		setDepartment(getContext(), department);
-	}
-
-	/**
-	 * Set value of Department
-	 * @param context
-	 * @param department
-	 */
-	public final void setDepartment(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.ENUM_User_Departments department)
-	{
-		if (department != null) {
-			getMendixObject().setValue(context, MemberNames.Department.toString(), department.toString());
-		} else {
-			getMendixObject().setValue(context, MemberNames.Department.toString(), null);
+			getMendixObject().setValue(context, MemberNames.User_Status.toString(), null);
 		}
 	}
 

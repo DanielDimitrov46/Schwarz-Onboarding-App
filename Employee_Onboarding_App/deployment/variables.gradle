@@ -1,6 +1,6 @@
 ext {
 	mendixJavaVersion = 11
-	mendixInstallDir = "C:/Programming/10.6.11.39264"
+	mendixInstallDir = "C:/Program Files/Mendix/10.12.9.49475"
 	projectName = "Employee_Onboarding_App"
 	projectSafeName = "Employee_Onboarding_App"
 	mendixProjectDir = "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App"
@@ -8,7 +8,7 @@ ext {
 	dataSnapshotFile = "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/data-snapshot.zip"
 	dataDir = "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/deployment/data"
 	extractDataSnapshot = false
-	templatesDir = "C:/Programming/10.6.11.39264/modeler/runtemplates"
+	templatesDir = "C:/Program Files/Mendix/10.12.9.49475/modeler/runtemplates"
 	runDir = "run"
 	compileTargetDir = "run/bin"
 	deploymentDirName = "deployment"

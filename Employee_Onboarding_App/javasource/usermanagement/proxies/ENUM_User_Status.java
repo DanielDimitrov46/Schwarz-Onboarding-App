@@ -6,9 +6,9 @@ package usermanagement.proxies;
 
 public enum ENUM_User_Status
 {
-	Admin(new java.lang.String[][] { new java.lang.String[] { "en_US", "Admin" } }),
-	Trainee(new java.lang.String[][] { new java.lang.String[] { "en_US", "Trainee" } }),
-	Trainer(new java.lang.String[][] { new java.lang.String[] { "en_US", "Trainer" } });
+	Created(new java.lang.String[][] { new java.lang.String[] { "en_US", "Created" } }),
+	Verificated(new java.lang.String[][] { new java.lang.String[] { "en_US", "Verificated" } }),
+	Sent(new java.lang.String[][] { new java.lang.String[] { "en_US", "Sent" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

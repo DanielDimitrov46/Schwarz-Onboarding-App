@@ -10,6 +10,7 @@
     "ScheduledEventExecution": "None"
   },
   "Constants": {
+    "BizzomateDevTools.Enabled": "True",
     "CommunityCommons.MergeMultiplePdfs_MaxAtOnce": "10",
     "Email_Connector.Email_Connector_Version": "5.9.1",
     "Email_Connector.SMTP_PASS": "amdw wllr memh tywf",

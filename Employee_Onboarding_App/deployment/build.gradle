@@ -95,11 +95,8 @@ tasks.register('copyLibs', Copy) {
     }
 
     from("$mendixProjectDir/$vendorlibDirName")
-
-    from("$mendixProjectDir/$userlibDirName") {
-        excludedJars.each { f -> exclude f }
-    }
-        
+    from("$mendixProjectDir/$userlibDirName")
+    excludedJars.each { f -> exclude f }       
     into "$modelDir/$libDirName/$userlibDirName"
 }
 
@@ -135,7 +132,10 @@ tasks.register("compile", JavaCompile) {
         include("*.jar")
         excludedJars.forEach { exclude(it) }
     }
-    def vendorlibJarFiles = fileTree("$mendixProjectDir/$vendorlibDirName")
+    def vendorlibJarFiles = fileTree("$mendixProjectDir/$vendorlibDirName")  {
+        include("*.jar")
+        excludedJars.forEach { exclude(it) }
+    }
 
     options.annotationProcessorPath = userlibJarFiles + vendorlibJarFiles
 

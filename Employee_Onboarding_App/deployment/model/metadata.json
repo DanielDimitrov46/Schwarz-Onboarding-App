@@ -1,5 +1,5 @@
 {
-  "RuntimeVersion": "10.6.11.39264",
+  "RuntimeVersion": "10.12.9.49475",
   "ProjectID": "e6e88ed5-e4c1-4eeb-b3b7-4e97e8b4e414",
   "ProjectName": "Employee_Onboarding_App",
   "ModelVersion": "unversioned",
@@ -46,6 +46,12 @@
     }
   },
   "Constants": [
+    {
+      "Name": "BizzomateDevTools.Enabled",
+      "Type": "Boolean",
+      "Description": "This constant enables or disabled the Bizzomate Mendix Dev Tools Chrome plugin. You can download the plugin here: \r\n\r\nhttps://chrome.google.com/webstore/detail/bizzomate-mendix-dev-tool/nkbokoloejkhohjlickhfkjfmbmboaof",
+      "DefaultValue": "True"
+    },
     {
       "Name": "CommunityCommons.MergeMultiplePdfs_MaxAtOnce",
       "Type": "Integer",

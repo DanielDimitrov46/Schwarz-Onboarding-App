@@ -2,7 +2,7 @@
 //
 // WARNING: Code you write here will be lost the next time you deploy the project.
 
-package notifications.proxies.microflows;
+package emailconfiguration.proxies.microflows;
 
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
@@ -14,13 +14,23 @@ public final class Microflows
 	 */
 	private Microflows() {}
 
-	// These are the microflows for the Notifications module
+	// These are the microflows for the EmailConfiguration module
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Email_SendEmailForNewAccountBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("EmailConfiguration.ACT_Email_SendEmailForNewAccount");
+		return builder;
+	}
+
+	public static void aCT_Email_SendEmailForNewAccount(IContext context)
+	{
+		aCT_Email_SendEmailForNewAccountBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sample_ACT_CreateEmailFromTemplateAndThenSend_2Builder(
 		usermanagement.proxies.User _user,
 		email_connector.proxies.EmailTemplate _emailTemplate
 	)
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notifications.Sample_ACT_CreateEmailFromTemplateAndThenSend_2");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("EmailConfiguration.Sample_ACT_CreateEmailFromTemplateAndThenSend_2");
 		builder = builder.withParam("User", _user);
 		builder = builder.withParam("EmailTemplate", _emailTemplate);
 		return builder;
@@ -43,7 +53,7 @@ public final class Microflows
 		email_connector.proxies.EmailTemplate _emailTemplate
 	)
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notifications.Sample_ACT_SendEmailWithTemplate_2");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("EmailConfiguration.Sample_ACT_SendEmailWithTemplate_2");
 		builder = builder.withParam("EmailAccountAsDataObject", _emailAccountAsDataObject);
 		builder = builder.withParam("EmailTemplate", _emailTemplate);
 		return builder;
@@ -63,7 +73,7 @@ public final class Microflows
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sample_ASU_SubscribeForEmailNotification_2Builder()
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notifications.Sample_ASU_SubscribeForEmailNotification_2");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("EmailConfiguration.Sample_ASU_SubscribeForEmailNotification_2");
 		return builder;
 	}
 
@@ -76,7 +86,7 @@ public final class Microflows
 		system.proxies.Error _systemErrObj
 	)
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notifications.SUB_GetSystemError_2");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("EmailConfiguration.SUB_GetSystemError_2");
 		builder = builder.withParam("SystemErrObj", _systemErrObj);
 		return builder;
 	}
