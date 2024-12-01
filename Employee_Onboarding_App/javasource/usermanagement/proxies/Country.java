@@ -21,9 +21,8 @@ public class Country implements com.mendix.systemwideinterfaces.core.IEntityProx
 	public enum MemberNames
 	{
 		Name("Name"),
-		StartOfTheWeek("StartOfTheWeek"),
-		Cca2("Cca2"),
-		Flag("Flag");
+		Code("Code"),
+		Start_of_week("Start_of_week");
 
 		private final java.lang.String metaName;
 
@@ -121,111 +120,75 @@ public class Country implements com.mendix.systemwideinterfaces.core.IEntityProx
 	}
 
 	/**
-	 * @return value of StartOfTheWeek
+	 * @return value of Code
 	 */
-	public final java.lang.String getStartOfTheWeek()
+	public final java.lang.String getCode()
 	{
-		return getStartOfTheWeek(getContext());
+		return getCode(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of StartOfTheWeek
+	 * @return value of Code
 	 */
-	public final java.lang.String getStartOfTheWeek(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getCode(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.StartOfTheWeek.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Code.toString());
 	}
 
 	/**
-	 * Set value of StartOfTheWeek
-	 * @param startoftheweek
+	 * Set value of Code
+	 * @param code
 	 */
-	public final void setStartOfTheWeek(java.lang.String startoftheweek)
+	public final void setCode(java.lang.String code)
 	{
-		setStartOfTheWeek(getContext(), startoftheweek);
+		setCode(getContext(), code);
 	}
 
 	/**
-	 * Set value of StartOfTheWeek
+	 * Set value of Code
 	 * @param context
-	 * @param startoftheweek
+	 * @param code
 	 */
-	public final void setStartOfTheWeek(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String startoftheweek)
+	public final void setCode(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String code)
 	{
-		getMendixObject().setValue(context, MemberNames.StartOfTheWeek.toString(), startoftheweek);
+		getMendixObject().setValue(context, MemberNames.Code.toString(), code);
 	}
 
 	/**
-	 * @return value of Cca2
+	 * @return value of Start_of_week
 	 */
-	public final java.lang.String getCca2()
+	public final java.lang.String getStart_of_week()
 	{
-		return getCca2(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of Cca2
-	 */
-	public final java.lang.String getCca2(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Cca2.toString());
-	}
-
-	/**
-	 * Set value of Cca2
-	 * @param cca2
-	 */
-	public final void setCca2(java.lang.String cca2)
-	{
-		setCca2(getContext(), cca2);
-	}
-
-	/**
-	 * Set value of Cca2
-	 * @param context
-	 * @param cca2
-	 */
-	public final void setCca2(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String cca2)
-	{
-		getMendixObject().setValue(context, MemberNames.Cca2.toString(), cca2);
-	}
-
-	/**
-	 * @return value of Flag
-	 */
-	public final java.lang.String getFlag()
-	{
-		return getFlag(getContext());
+		return getStart_of_week(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of Flag
+	 * @return value of Start_of_week
 	 */
-	public final java.lang.String getFlag(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getStart_of_week(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Flag.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Start_of_week.toString());
 	}
 
 	/**
-	 * Set value of Flag
-	 * @param flag
+	 * Set value of Start_of_week
+	 * @param start_of_week
 	 */
-	public final void setFlag(java.lang.String flag)
+	public final void setStart_of_week(java.lang.String start_of_week)
 	{
-		setFlag(getContext(), flag);
+		setStart_of_week(getContext(), start_of_week);
 	}
 
 	/**
-	 * Set value of Flag
+	 * Set value of Start_of_week
 	 * @param context
-	 * @param flag
+	 * @param start_of_week
 	 */
-	public final void setFlag(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String flag)
+	public final void setStart_of_week(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String start_of_week)
 	{
-		getMendixObject().setValue(context, MemberNames.Flag.toString(), flag);
+		getMendixObject().setValue(context, MemberNames.Start_of_week.toString(), start_of_week);
 	}
 
 	@java.lang.Override

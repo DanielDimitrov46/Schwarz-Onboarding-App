@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot, JAVA_VERSION=11.0.16.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.16.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.16.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 36840). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-36840.out.log
-Starting 11th build in daemon [uptime: 2 hrs 0 mins 47.592 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 21% of 384 MiB]
+The client will now receive all logging from the daemon (pid: 11808). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-11808.out.log
+Starting 6th build in daemon [uptime: 15 mins 55.692 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 23% of 384 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -23,7 +23,7 @@ Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifac
 Tasks that were excluded: []
 Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 :clean-excluded-jars (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[included builds,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 14,5,main]) started.
 
 > Task :clean-excluded-jars UP-TO-DATE
 Caching disabled for task ':clean-excluded-jars' because:
@@ -39,7 +39,7 @@ Caching disabled for task ':copyDeploymentArtifacts' because:
 Task ':copyDeploymentArtifacts' is not up-to-date because:
   Task is untracked because: Always copy deployment artifacts
 Not watching anything anymore
-Resolve mutations for :copyLibs (Thread[included builds,5,main]) started.
+Resolve mutations for :copyLibs (Thread[Execution worker,5,main]) started.
 :copyLibs (Thread[Execution worker,5,main]) started.
 
 > Task :copyLibs UP-TO-DATE

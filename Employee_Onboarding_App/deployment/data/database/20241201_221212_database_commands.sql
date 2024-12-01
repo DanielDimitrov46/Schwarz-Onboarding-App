@@ -1,0 +1,11 @@
+ALTER TABLE "usermanagement$country" DROP COLUMN "cca2";
+ALTER TABLE "usermanagement$country" DROP COLUMN "flag";
+ALTER TABLE "usermanagement$country" DROP COLUMN "startoftheweek";
+ALTER TABLE "usermanagement$country" ADD "code" VARCHAR_IGNORECASE(8) NULL;
+ALTER TABLE "usermanagement$country" ADD "start_of_week" VARCHAR_IGNORECASE(10) NULL;
+DELETE FROM "mendixsystem$attribute"  WHERE "id" = '8a9a56a9-f5e1-4d03-91d6-24e1e0369d00';
+DELETE FROM "mendixsystem$attribute"  WHERE "id" = '9e8c3a46-c5b6-498a-91ab-701a5058e02d';
+DELETE FROM "mendixsystem$attribute"  WHERE "id" = '6dc1572f-f498-4826-93e5-bd77598051de';
+INSERT INTO "mendixsystem$attribute" ("id", "entity_id", "attribute_name", "column_name", "type", "length", "default_value", "is_auto_number") VALUES ('8c8e8f04-9169-405c-92f8-8b9629abc0b5', '37ce6fa0-c88f-4c4b-bfd0-47526a150840', 'Code', 'code', 30, 8, '', false);
+INSERT INTO "mendixsystem$attribute" ("id", "entity_id", "attribute_name", "column_name", "type", "length", "default_value", "is_auto_number") VALUES ('06f94cf7-9e0e-40b6-83c9-a287b98ebbb7', '37ce6fa0-c88f-4c4b-bfd0-47526a150840', 'Start_of_week', 'start_of_week', 30, 10, '', false);
+UPDATE "mendixsystem$version" SET "versionnumber" = '4.2', "lastsyncdate" = '20241201 22:12:12';

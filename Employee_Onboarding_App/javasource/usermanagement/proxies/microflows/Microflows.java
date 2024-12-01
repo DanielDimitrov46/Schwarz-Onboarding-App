@@ -17,21 +17,21 @@ public final class Microflows
 
 	// These are the microflows for the UserManagement module
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Country_CreationBuilder(
-		java.util.List<usermanagement.proxies.Name> _nameList
+		java.util.List<usermanagement.proxies.Country> _countryList_2
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_Country_Creation");
-		builder = builder.withParam("NameList", _nameList);
+		builder = builder.withParam("CountryList_2", _countryList_2);
 		return builder;
 	}
 
 	public static void aCT_Country_Creation(
 		IContext context,
-		java.util.List<usermanagement.proxies.Name> _nameList
+		java.util.List<usermanagement.proxies.Country> _countryList_2
 	)
 	{
 		aCT_Country_CreationBuilder(
-				_nameList
+				_countryList_2
 			)
 			.execute(context);
 	}
