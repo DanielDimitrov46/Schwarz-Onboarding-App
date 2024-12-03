@@ -17,6 +17,8 @@ public class User extends administration.proxies.Account
 	public enum MemberNames
 	{
 		User_Status("User_Status"),
+		FirstLogin("FirstLogin"),
+		FirstTimePassword("FirstTimePassword"),
 		FullName("FullName"),
 		Email("Email"),
 		IsLocalUser("IsLocalUser"),
@@ -134,6 +136,78 @@ public class User extends administration.proxies.Account
 		} else {
 			getMendixObject().setValue(context, MemberNames.User_Status.toString(), null);
 		}
+	}
+
+	/**
+	 * @return value of FirstLogin
+	 */
+	public final java.lang.Boolean getFirstLogin()
+	{
+		return getFirstLogin(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of FirstLogin
+	 */
+	public final java.lang.Boolean getFirstLogin(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.FirstLogin.toString());
+	}
+
+	/**
+	 * Set value of FirstLogin
+	 * @param firstlogin
+	 */
+	public final void setFirstLogin(java.lang.Boolean firstlogin)
+	{
+		setFirstLogin(getContext(), firstlogin);
+	}
+
+	/**
+	 * Set value of FirstLogin
+	 * @param context
+	 * @param firstlogin
+	 */
+	public final void setFirstLogin(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean firstlogin)
+	{
+		getMendixObject().setValue(context, MemberNames.FirstLogin.toString(), firstlogin);
+	}
+
+	/**
+	 * @return value of FirstTimePassword
+	 */
+	public final java.lang.String getFirstTimePassword()
+	{
+		return getFirstTimePassword(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of FirstTimePassword
+	 */
+	public final java.lang.String getFirstTimePassword(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.FirstTimePassword.toString());
+	}
+
+	/**
+	 * Set value of FirstTimePassword
+	 * @param firsttimepassword
+	 */
+	public final void setFirstTimePassword(java.lang.String firsttimepassword)
+	{
+		setFirstTimePassword(getContext(), firsttimepassword);
+	}
+
+	/**
+	 * Set value of FirstTimePassword
+	 * @param context
+	 * @param firsttimepassword
+	 */
+	public final void setFirstTimePassword(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String firsttimepassword)
+	{
+		getMendixObject().setValue(context, MemberNames.FirstTimePassword.toString(), firsttimepassword);
 	}
 
 	/**

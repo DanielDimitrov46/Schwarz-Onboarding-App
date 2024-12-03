@@ -165,6 +165,16 @@ public final class Microflows
 	{
 		aCT_User_EditUserBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_FirstLoginBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_FirstLogin");
+		return builder;
+	}
+
+	public static void aCT_User_FirstLogin(IContext context)
+	{
+		aCT_User_FirstLoginBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveImageBuilder(
 		usermanagement.proxies.ProfilePicture _profilePicture
 	)
@@ -199,6 +209,25 @@ public final class Microflows
 	)
 	{
 		aCT_User_SaveUserBuilder(
+				_accountPasswordData
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder changePasswordBuilder(
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ChangePassword");
+		builder = builder.withParam("AccountPasswordData", _accountPasswordData);
+		return builder;
+	}
+
+	public static void changePassword(
+		IContext context,
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		changePasswordBuilder(
 				_accountPasswordData
 			)
 			.execute(context);
@@ -265,6 +294,25 @@ public final class Microflows
 			.execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> system.proxies.UserRole.initialize(context, obj));
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder showPasswordFormBuilder(
+		administration.proxies.Account _account
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ShowPasswordForm");
+		builder = builder.withParam("Account", _account);
+		return builder;
+	}
+
+	public static void showPasswordForm(
+		IContext context,
+		administration.proxies.Account _account
+	)
+	{
+		showPasswordFormBuilder(
+				_account
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_Trainee_FieldValidationBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData
 	)
@@ -293,14 +341,15 @@ public final class Microflows
 		return builder;
 	}
 
-	public static void vAL_User_FieldValidation(
+	public static boolean vAL_User_FieldValidation(
 		IContext context,
 		administration.proxies.AccountPasswordData _accountPasswordData
 	)
 	{
-		vAL_User_FieldValidationBuilder(
+		Object result = vAL_User_FieldValidationBuilder(
 				_accountPasswordData
 			)
 			.execute(context);
+		return (boolean) result;
 	}
 }

@@ -6,7 +6,7 @@ package usermanagement.proxies;
 
 public enum ENUM_User_Status
 {
-	Created(new java.lang.String[][] { new java.lang.String[] { "en_US", "Created" } }),
+	Created(new java.lang.String[][] { new java.lang.String[] { "en_US", "Created" }, new java.lang.String[] { "de_DE", "Erstellt" } }),
 	Verificated(new java.lang.String[][] { new java.lang.String[] { "en_US", "Verificated" } }),
 	Sent(new java.lang.String[][] { new java.lang.String[] { "en_US", "Sent" } });
 
