@@ -25,6 +25,8 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		Duration("Duration"),
 		TypeOfCourse("TypeOfCourse"),
 		PointsForCourse("PointsForCourse"),
+		StartDate("StartDate"),
+		CourseImage_Course("CourseManagement.CourseImage_Course"),
 		Course_User("CourseManagement.Course_User");
 
 		private final java.lang.String metaName;
@@ -273,6 +275,89 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 	public final void setPointsForCourse(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer pointsforcourse)
 	{
 		getMendixObject().setValue(context, MemberNames.PointsForCourse.toString(), pointsforcourse);
+	}
+
+	/**
+	 * @return value of StartDate
+	 */
+	public final java.util.Date getStartDate()
+	{
+		return getStartDate(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of StartDate
+	 */
+	public final java.util.Date getStartDate(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.util.Date) getMendixObject().getValue(context, MemberNames.StartDate.toString());
+	}
+
+	/**
+	 * Set value of StartDate
+	 * @param startdate
+	 */
+	public final void setStartDate(java.util.Date startdate)
+	{
+		setStartDate(getContext(), startdate);
+	}
+
+	/**
+	 * Set value of StartDate
+	 * @param context
+	 * @param startdate
+	 */
+	public final void setStartDate(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date startdate)
+	{
+		getMendixObject().setValue(context, MemberNames.StartDate.toString(), startdate);
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of CourseImage_Course
+	 */
+	public final coursemanagement.proxies.CourseImage getCourseImage_Course() throws com.mendix.core.CoreException
+	{
+		return getCourseImage_Course(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of CourseImage_Course
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final coursemanagement.proxies.CourseImage getCourseImage_Course(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		coursemanagement.proxies.CourseImage result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.CourseImage_Course.toString());
+		if (identifier != null) {
+			result = coursemanagement.proxies.CourseImage.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of CourseImage_Course
+	 * @param courseimage_course
+	 */
+	public final void setCourseImage_Course(coursemanagement.proxies.CourseImage courseimage_course)
+	{
+		setCourseImage_Course(getContext(), courseimage_course);
+	}
+
+	/**
+	 * Set value of CourseImage_Course
+	 * @param context
+	 * @param courseimage_course
+	 */
+	public final void setCourseImage_Course(com.mendix.systemwideinterfaces.core.IContext context, coursemanagement.proxies.CourseImage courseimage_course)
+	{
+		if (courseimage_course == null) {
+			getMendixObject().setValue(context, MemberNames.CourseImage_Course.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.CourseImage_Course.toString(), courseimage_course.getMendixObject().getId());
+		}
 	}
 
 	/**

@@ -6,8 +6,8 @@ package coursemanagement.proxies;
 
 public enum ENUM_Course_TypeOfCourse
 {
-	classroom(new java.lang.String[][] { new java.lang.String[] { "de_DE", "classroom" } }),
-	self_learning(new java.lang.String[][] { new java.lang.String[] { "de_DE", "self-learning" } });
+	classroom(new java.lang.String[][] { new java.lang.String[] { "de_DE", "classroom" }, new java.lang.String[] { "en_US", "classroom" } }),
+	self_learning(new java.lang.String[][] { new java.lang.String[] { "de_DE", "self-learning" }, new java.lang.String[] { "en_US", "self learning" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

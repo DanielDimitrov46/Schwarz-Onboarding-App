@@ -175,6 +175,44 @@ public final class Microflows
 	{
 		aCT_User_FirstLoginBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_RedirectionBuilder(
+		usermanagement.proxies.User _user
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_Redirection");
+		builder = builder.withParam("User", _user);
+		return builder;
+	}
+
+	public static void aCT_User_Redirection(
+		IContext context,
+		usermanagement.proxies.User _user
+	)
+	{
+		aCT_User_RedirectionBuilder(
+				_user
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveEditUserBuilder(
+		usermanagement.proxies.User _user
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_SaveEditUser");
+		builder = builder.withParam("User", _user);
+		return builder;
+	}
+
+	public static void aCT_User_SaveEditUser(
+		IContext context,
+		usermanagement.proxies.User _user
+	)
+	{
+		aCT_User_SaveEditUserBuilder(
+				_user
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveImageBuilder(
 		usermanagement.proxies.ProfilePicture _profilePicture
 	)
@@ -331,6 +369,26 @@ public final class Microflows
 				_accountPasswordData
 			)
 			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_User_EditFieldValidationBuilder(
+		usermanagement.proxies.User _user_2
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.VAL_User_EditFieldValidation");
+		builder = builder.withParam("User_2", _user_2);
+		return builder;
+	}
+
+	public static boolean vAL_User_EditFieldValidation(
+		IContext context,
+		usermanagement.proxies.User _user_2
+	)
+	{
+		Object result = vAL_User_EditFieldValidationBuilder(
+				_user_2
+			)
+			.execute(context);
+		return (boolean) result;
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_User_FieldValidationBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData
