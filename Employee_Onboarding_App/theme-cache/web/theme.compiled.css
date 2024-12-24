@@ -2952,6 +2952,10 @@
   content: "\ea6d";
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
 .tr {
   display: contents;
 }
@@ -2971,11 +2975,19 @@
   margin: 8px 0 0 0;
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
 .tr {
   display: contents;
 }
 .tr.change-row-color .td {
   background-color: gray;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -3457,11 +3469,19 @@
   pointer-events: none;
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
 .tr {
   display: contents;
 }
 .tr.change-row-color .td {
   background-color: gray;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -4250,6 +4270,10 @@
   --callout-info-color: #0086d9;
   /* Background Color */
   --callout-info-bg: #cce7f7;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -25660,6 +25684,10 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin-right: 16px;
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
 .tr {
   display: contents;
 }
@@ -26274,6 +26302,10 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 
 .statuspage-subtitle {
   opacity: 0.6;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -27933,11 +27965,19 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-width: 0;
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
 .tr {
   display: contents;
 }
 .tr.change-row-color .td {
   background-color: gray;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -27954,11 +27994,8 @@ input[type=checkbox].three-state-checkbox + .control-label {
   color: #fff;
 }
 
-.tr {
-  display: contents;
-}
-.tr.change-row-color .td {
-  background-color: gray;
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -27968,11 +28005,8 @@ input[type=checkbox].three-state-checkbox + .control-label {
   background-color: gray;
 }
 
-.tr {
-  display: contents;
-}
-.tr.change-row-color .td {
-  background-color: gray;
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -27982,11 +28016,8 @@ input[type=checkbox].three-state-checkbox + .control-label {
   background-color: gray;
 }
 
-.tr {
-  display: contents;
-}
-.tr.change-row-color .td {
-  background-color: gray;
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {
@@ -27996,11 +28027,52 @@ input[type=checkbox].three-state-checkbox + .control-label {
   background-color: gray;
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
 .tr {
   display: contents;
 }
 .tr.change-row-color .td {
   background-color: gray;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
 }
 
 .tr {

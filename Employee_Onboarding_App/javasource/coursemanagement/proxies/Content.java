@@ -20,8 +20,8 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	 */
 	public enum MemberNames
 	{
-		NameOfContent("NameOfContent"),
-		DescriptionForContent("DescriptionForContent"),
+		ContentTitle("ContentTitle"),
+		ContentDescription("ContentDescription"),
 		Content_Course("CourseManagement.Content_Course");
 
 		private final java.lang.String metaName;
@@ -84,75 +84,75 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	}
 
 	/**
-	 * @return value of NameOfContent
+	 * @return value of ContentTitle
 	 */
-	public final java.lang.String getNameOfContent()
+	public final java.lang.String getContentTitle()
 	{
-		return getNameOfContent(getContext());
+		return getContentTitle(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of NameOfContent
+	 * @return value of ContentTitle
 	 */
-	public final java.lang.String getNameOfContent(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getContentTitle(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.NameOfContent.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ContentTitle.toString());
 	}
 
 	/**
-	 * Set value of NameOfContent
-	 * @param nameofcontent
+	 * Set value of ContentTitle
+	 * @param contenttitle
 	 */
-	public final void setNameOfContent(java.lang.String nameofcontent)
+	public final void setContentTitle(java.lang.String contenttitle)
 	{
-		setNameOfContent(getContext(), nameofcontent);
+		setContentTitle(getContext(), contenttitle);
 	}
 
 	/**
-	 * Set value of NameOfContent
+	 * Set value of ContentTitle
 	 * @param context
-	 * @param nameofcontent
+	 * @param contenttitle
 	 */
-	public final void setNameOfContent(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String nameofcontent)
+	public final void setContentTitle(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String contenttitle)
 	{
-		getMendixObject().setValue(context, MemberNames.NameOfContent.toString(), nameofcontent);
+		getMendixObject().setValue(context, MemberNames.ContentTitle.toString(), contenttitle);
 	}
 
 	/**
-	 * @return value of DescriptionForContent
+	 * @return value of ContentDescription
 	 */
-	public final java.lang.String getDescriptionForContent()
+	public final java.lang.String getContentDescription()
 	{
-		return getDescriptionForContent(getContext());
+		return getContentDescription(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of DescriptionForContent
+	 * @return value of ContentDescription
 	 */
-	public final java.lang.String getDescriptionForContent(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getContentDescription(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.DescriptionForContent.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ContentDescription.toString());
 	}
 
 	/**
-	 * Set value of DescriptionForContent
-	 * @param descriptionforcontent
+	 * Set value of ContentDescription
+	 * @param contentdescription
 	 */
-	public final void setDescriptionForContent(java.lang.String descriptionforcontent)
+	public final void setContentDescription(java.lang.String contentdescription)
 	{
-		setDescriptionForContent(getContext(), descriptionforcontent);
+		setContentDescription(getContext(), contentdescription);
 	}
 
 	/**
-	 * Set value of DescriptionForContent
+	 * Set value of ContentDescription
 	 * @param context
-	 * @param descriptionforcontent
+	 * @param contentdescription
 	 */
-	public final void setDescriptionForContent(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String descriptionforcontent)
+	public final void setContentDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String contentdescription)
 	{
-		getMendixObject().setValue(context, MemberNames.DescriptionForContent.toString(), descriptionforcontent);
+		getMendixObject().setValue(context, MemberNames.ContentDescription.toString(), contentdescription);
 	}
 
 	/**
