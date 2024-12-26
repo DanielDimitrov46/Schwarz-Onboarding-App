@@ -26,6 +26,7 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		TypeOfCourse("TypeOfCourse"),
 		PointsForCourse("PointsForCourse"),
 		StartDate("StartDate"),
+		DifficultyOfCourse("DifficultyOfCourse"),
 		CourseImage_Course("CourseManagement.CourseImage_Course"),
 		Course_User("CourseManagement.Course_User");
 
@@ -311,6 +312,51 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 	public final void setStartDate(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date startdate)
 	{
 		getMendixObject().setValue(context, MemberNames.StartDate.toString(), startdate);
+	}
+
+	/**
+	 * Get value of DifficultyOfCourse
+	 * @param difficultyofcourse
+	 */
+	public final coursemanagement.proxies.ENUM_Course_Difficulty getDifficultyOfCourse()
+	{
+		return getDifficultyOfCourse(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of DifficultyOfCourse
+	 */
+	public final coursemanagement.proxies.ENUM_Course_Difficulty getDifficultyOfCourse(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.DifficultyOfCourse.toString());
+		if (obj == null) {
+			return null;
+		}
+		return coursemanagement.proxies.ENUM_Course_Difficulty.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of DifficultyOfCourse
+	 * @param difficultyofcourse
+	 */
+	public final void setDifficultyOfCourse(coursemanagement.proxies.ENUM_Course_Difficulty difficultyofcourse)
+	{
+		setDifficultyOfCourse(getContext(), difficultyofcourse);
+	}
+
+	/**
+	 * Set value of DifficultyOfCourse
+	 * @param context
+	 * @param difficultyofcourse
+	 */
+	public final void setDifficultyOfCourse(com.mendix.systemwideinterfaces.core.IContext context, coursemanagement.proxies.ENUM_Course_Difficulty difficultyofcourse)
+	{
+		if (difficultyofcourse != null) {
+			getMendixObject().setValue(context, MemberNames.DifficultyOfCourse.toString(), difficultyofcourse.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.DifficultyOfCourse.toString(), null);
+		}
 	}
 
 	/**
