@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot, JAVA_VERSION=11.0.16.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.16.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.16.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 13036). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-13036.out.log
-Starting 4th build in daemon [uptime: 1 hrs 9 mins 23.555 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 21% of 384 MiB]
+The client will now receive all logging from the daemon (pid: 25616). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-25616.out.log
+Starting 4th build in daemon [uptime: 1 hrs 41 mins 33.748 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 22% of 384 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -23,7 +23,7 @@ Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifac
 Tasks that were excluded: []
 Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 :clean-excluded-jars (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[included builds,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 15,5,main]) started.
 
 > Task :clean-excluded-jars UP-TO-DATE
 Caching disabled for task ':clean-excluded-jars' because:
@@ -56,13 +56,13 @@ Resolve mutations for :unzipDataSnapshot (Thread[Execution worker,5,main]) start
 
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
-Resolve mutations for :deploy (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :deploy (Thread[Execution worker,5,main]) started.
 :deploy (Thread[Execution worker,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 7s
+BUILD SUCCESSFUL in 9s
 3 actionable tasks: 1 executed, 2 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment]
 

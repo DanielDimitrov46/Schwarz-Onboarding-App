@@ -6,6 +6,7 @@ package coursemanagement.proxies.microflows;
 
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
+import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public final class Microflows
 {
@@ -79,6 +80,26 @@ public final class Microflows
 				_course
 			)
 			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_User_RetrieveForAssignBuilder(
+		coursemanagement.proxies.CourseAssignment _courseAssignment
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.DS_User_RetrieveForAssign");
+		builder = builder.withParam("CourseAssignment", _courseAssignment);
+		return builder;
+	}
+
+	public static java.util.List<usermanagement.proxies.User> dS_User_RetrieveForAssign(
+		IContext context,
+		coursemanagement.proxies.CourseAssignment _courseAssignment
+	)
+	{
+		Object result = dS_User_RetrieveForAssignBuilder(
+				_courseAssignment
+			)
+			.execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.User.initialize(context, obj));
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_Content_FieldValidationBuilder(
 		coursemanagement.proxies.Content _content
