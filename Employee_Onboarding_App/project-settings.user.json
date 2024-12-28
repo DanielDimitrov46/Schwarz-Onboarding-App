@@ -10,7 +10,29 @@
     {
       "suppressions": [],
       "disabledBestPractices": [],
-      "readRecommendations": [],
+      "readRecommendations": [
+        {
+          "code": "MXP006",
+          "locationObjects": [
+            {
+              "uuid": "11765356-0197-41c0-8ab2-b1c233f5a962",
+              "fullPath": "UserManagement.ACT_User_EditAccount"
+            },
+            {
+              "uuid": "89883bc6-4c11-47f2-9bbc-3108dae37ec3",
+              "fullPath": "actionButton7 (ActionButton) < e28a29b6-7f39-404a-871d-edea6aaa3467 (WidgetValue) < b3a61387-73b8-43c4-abbe-2429b76f1d20 (WidgetProperty) < fb26619d-c56e-4f9a-b562-4dc07faabe3f (WidgetObject) < 310dec8a-9ad1-4d16-9235-04c16ea0dbeb (WidgetValue) < ac9c67ab-3013-4ed3-b843-bb07282cef74 (WidgetProperty) < 7ea329d8-65d2-409c-ae3f-b37e2fd0ce06 (WidgetObject) < dataGrid2_1 (CustomWidget) < d58dd521-c9b2-4fa3-a0fe-26fb9f29b0f2 (LayoutGridColumn) < 1318ade1-c54f-4d9f-8dd9-3236b194f62b (LayoutGridRow) < layoutGrid2 (LayoutGrid) < 52cc8bda-e736-4ecc-9741-08e3cb3c576d (LayoutCallArgument) < 71d1dfdf-6ef0-49e9-a398-642df218d113 (LayoutCall) < UserManagement.Account_Trainee_Overview"
+            },
+            {
+              "uuid": "62164ee5-6579-47aa-913d-8aa4fa355c64",
+              "fullPath": "actionButton1 (ActionButton) < cc6b70dd-15c5-4917-85b5-7a34531410f7 (WidgetValue) < 37566066-4fb8-4e58-ae4e-6caa55c9ea52 (WidgetProperty) < e92f468f-5954-4f0d-b9e4-3e5e2abfd3ef (WidgetObject) < 285ef4e6-895c-4674-8d47-3901d7104473 (WidgetValue) < 5b4d214d-3632-45a7-9582-e0f0c70db8b9 (WidgetProperty) < 80adb742-9f86-462a-8ef5-c8a2cfc3b9e9 (WidgetObject) < dataGrid21 (CustomWidget) < 95f38d05-ef87-47f9-b3dd-8c7951800d19 (LayoutGridColumn) < 76bb8d7d-f33d-44e9-a50c-12caa88e91b6 (LayoutGridRow) < layoutGrid4 (LayoutGrid) < d979de01-f209-4785-bbe2-a949f4da48ff (LayoutCallArgument) < 47f75d4a-4750-416b-a943-3bbd439e6a0a (LayoutCall) < UserManagement.Account_Overview"
+            },
+            {
+              "uuid": "50d63eb8-2edb-46f7-97e8-4e008e6a03d2",
+              "fullPath": "actionButton4 (ActionButton) < fbf9a539-7a73-4ee6-b6ae-7daecce7c124 (WidgetValue) < 1598f907-72c3-4030-97f9-9288924c2704 (WidgetProperty) < 2450449a-20e9-4771-8308-cd8c447c6ccf (WidgetObject) < e0d65670-875d-47df-8fcb-208efdcdef21 (WidgetValue) < 813319e3-3f5c-4556-83f6-bf5848bb4c0a (WidgetProperty) < 897f94bc-415d-4534-bc97-85bd94a9de9a (WidgetObject) < dataGrid22 (CustomWidget) < 95f38d05-ef87-47f9-b3dd-8c7951800d19 (LayoutGridColumn) < 76bb8d7d-f33d-44e9-a50c-12caa88e91b6 (LayoutGridRow) < layoutGrid4 (LayoutGrid) < d979de01-f209-4785-bbe2-a949f4da48ff (LayoutCallArgument) < 47f75d4a-4750-416b-a943-3bbd439e6a0a (LayoutCall) < UserManagement.Account_Overview"
+            }
+          ]
+        }
+      ],
       "suppressedRecommendations": [],
       "hasShownRecommendationsNotificationForThisApp": true,
       "type": "Mendix.Modeler.MxAssist.PerformanceBot.Serialization.Configuration.PerformanceBotConfiguration, Mendix.Modeler.MxAssist.PerformanceBot.Serialization, Version=10.12.9.0, Culture=neutral, PublicKeyToken=null"

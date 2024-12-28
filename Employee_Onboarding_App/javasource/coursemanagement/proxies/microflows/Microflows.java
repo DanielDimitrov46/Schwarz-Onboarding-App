@@ -58,6 +58,29 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseAssignement_SaveBuilder(
+		coursemanagement.proxies.CourseAssignment _courseAssignment,
+		coursemanagement.proxies.Course _course_2
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.ACT_CourseAssignement_Save");
+		builder = builder.withParam("CourseAssignment", _courseAssignment);
+		builder = builder.withParam("Course_2", _course_2);
+		return builder;
+	}
+
+	public static void aCT_CourseAssignement_Save(
+		IContext context,
+		coursemanagement.proxies.CourseAssignment _courseAssignment,
+		coursemanagement.proxies.Course _course_2
+	)
+	{
+		aCT_CourseAssignement_SaveBuilder(
+				_courseAssignment,
+				_course_2
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseImage_UploadBuilder(
 		coursemanagement.proxies.CourseImage _courseImage,
 		coursemanagement.proxies.Course _course
@@ -80,6 +103,17 @@ public final class Microflows
 				_course
 			)
 			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_CourseAssignement_RetrieveBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.DS_CourseAssignement_Retrieve");
+		return builder;
+	}
+
+	public static java.util.List<coursemanagement.proxies.CourseAssignment> dS_CourseAssignement_Retrieve(IContext context)
+	{
+		Object result = dS_CourseAssignement_RetrieveBuilder().execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> coursemanagement.proxies.CourseAssignment.initialize(context, obj));
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_User_RetrieveForAssignBuilder(
 		coursemanagement.proxies.CourseAssignment _courseAssignment
