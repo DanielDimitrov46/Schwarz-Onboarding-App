@@ -45,6 +45,16 @@ public final class Microflows
 	{
 		aCT_Country_DeleteDataBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Country_RetrieveAdvancedCaseBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_Country_RetrieveAdvancedCase");
+		return builder;
+	}
+
+	public static void aCT_Country_RetrieveAdvancedCase(IContext context)
+	{
+		aCT_Country_RetrieveAdvancedCaseBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Image_RemoveBuilder(
 		usermanagement.proxies.ProfilePicture _profilePicture,
 		usermanagement.proxies.User _user

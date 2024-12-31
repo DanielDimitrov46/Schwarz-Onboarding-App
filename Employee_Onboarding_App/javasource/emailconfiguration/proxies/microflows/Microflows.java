@@ -15,16 +15,6 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the EmailConfiguration module
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Email_SendEmailForNewAccountBuilder()
-	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("EmailConfiguration.ACT_Email_SendEmailForNewAccount");
-		return builder;
-	}
-
-	public static void aCT_Email_SendEmailForNewAccount(IContext context)
-	{
-		aCT_Email_SendEmailForNewAccountBuilder().execute(context);
-	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sample_ACT_CreateEmailFromTemplateAndThenSend_2Builder(
 		usermanagement.proxies.User _user,
 		email_connector.proxies.EmailTemplate _emailTemplate

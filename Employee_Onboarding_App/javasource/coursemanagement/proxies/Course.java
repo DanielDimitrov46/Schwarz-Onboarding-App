@@ -27,7 +27,6 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		PointsForCourse("PointsForCourse"),
 		StartDate("StartDate"),
 		DifficultyOfCourse("DifficultyOfCourse"),
-		url_course("url_course"),
 		CourseImage_Course("CourseManagement.CourseImage_Course"),
 		Course_User("CourseManagement.Course_User");
 
@@ -358,42 +357,6 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		} else {
 			getMendixObject().setValue(context, MemberNames.DifficultyOfCourse.toString(), null);
 		}
-	}
-
-	/**
-	 * @return value of url_course
-	 */
-	public final java.lang.String geturl_course()
-	{
-		return geturl_course(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of url_course
-	 */
-	public final java.lang.String geturl_course(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.url_course.toString());
-	}
-
-	/**
-	 * Set value of url_course
-	 * @param url_course
-	 */
-	public final void seturl_course(java.lang.String url_course)
-	{
-		seturl_course(getContext(), url_course);
-	}
-
-	/**
-	 * Set value of url_course
-	 * @param context
-	 * @param url_course
-	 */
-	public final void seturl_course(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String url_course)
-	{
-		getMendixObject().setValue(context, MemberNames.url_course.toString(), url_course);
 	}
 
 	/**
