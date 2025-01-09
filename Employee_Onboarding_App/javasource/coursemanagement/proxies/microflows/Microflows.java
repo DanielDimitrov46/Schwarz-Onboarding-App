@@ -39,6 +39,25 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Course_DropOffBuilder(
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.ACT_Course_DropOff");
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static void aCT_Course_DropOff(
+		IContext context,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		aCT_Course_DropOffBuilder(
+				_course
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Course_SaveBuilder(
 		coursemanagement.proxies.Course _course
 	)
@@ -115,6 +134,26 @@ public final class Microflows
 		Object result = dS_CourseAssignement_RetrieveBuilder().execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> coursemanagement.proxies.CourseAssignment.initialize(context, obj));
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_CourseAssignement_Retrieve_CurrentCourseBuilder(
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.DS_CourseAssignement_Retrieve_CurrentCourse");
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static coursemanagement.proxies.CourseAssignment dS_CourseAssignement_Retrieve_CurrentCourse(
+		IContext context,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		Object result = dS_CourseAssignement_Retrieve_CurrentCourseBuilder(
+				_course
+			)
+			.execute(context);
+		return result == null ? null : coursemanagement.proxies.CourseAssignment.initialize(context, (IMendixObject) result);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_User_RetrieveForAssignBuilder(
 		coursemanagement.proxies.CourseAssignment _courseAssignment
 	)
@@ -134,6 +173,17 @@ public final class Microflows
 			)
 			.execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.User.initialize(context, obj));
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder tETETETEBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.TETETETE");
+		return builder;
+	}
+
+	public static java.util.List<coursemanagement.proxies.CourseAssignment> tETETETE(IContext context)
+	{
+		Object result = tETETETEBuilder().execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> coursemanagement.proxies.CourseAssignment.initialize(context, obj));
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_Content_FieldValidationBuilder(
 		coursemanagement.proxies.Content _content
