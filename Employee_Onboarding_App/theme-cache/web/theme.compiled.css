@@ -2997,6 +2997,17 @@
   background-color: gray;
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
 /* 
     ==| Variables |=========================================================================================
 */
@@ -27992,17 +28003,6 @@ input[type=checkbox].three-state-checkbox + .control-label {
 }
 .layout-snacco     .region-topbar             .mx-navbar ul.nav > li.mx-navbar-item > a {
   color: #fff;
-}
-
-.hideclosebutton .modal-dialog .modal-content .modal-header .close {
-  display: none;
-}
-
-.tr {
-  display: contents;
-}
-.tr.change-row-color .td {
-  background-color: gray;
 }
 
 .hideclosebutton .modal-dialog .modal-content .modal-header .close {
