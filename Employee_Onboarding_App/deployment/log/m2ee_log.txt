@@ -1,2 +1,5 @@
-2025-01-09 19:49:39.629 INFO - M2EE: Added admin request handler '/prometheus' with servlet class 'com.mendix.metrics.prometheus.PrometheusServlet'
-[rtlauncher:container$] INFO Container start took 2949. Ready to accept admin requests.
+2025-01-10 22:44:19.236 INFO - M2EE: Added admin request handler '/prometheus' with servlet class 'com.mendix.metrics.prometheus.PrometheusServlet'
+[rtlauncher:container$] INFO Container start took 3538. Ready to accept admin requests.
+[containersupport:eventing] WARNING: Could not send event because no event handler was found for topic `com/mendix/events/runtime/shutdown`.
+
+
