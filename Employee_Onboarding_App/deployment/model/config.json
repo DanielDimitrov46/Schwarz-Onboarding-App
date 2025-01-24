@@ -20,7 +20,9 @@
     "Encryption.LogNode": "Encryption",
     "Encryption.EncryptionPrefix": "{AES3}",
     "Encryption.EncryptionKey": "12345678912345678912345678912345",
-    "Encryption.LegacyEncryptionKey": ""
+    "Encryption.LegacyEncryptionKey": "",
+    "ExcelImporter.EnableExternalEntities": "False",
+    "ExcelImporter.ParseEmptyCells": "False"
   },
   "AdminPassword": "1"
 }

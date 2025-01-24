@@ -174,17 +174,6 @@ public final class Microflows
 			.execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.User.initialize(context, obj));
 	}
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder tETETETEBuilder()
-	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.TETETETE");
-		return builder;
-	}
-
-	public static java.util.List<coursemanagement.proxies.CourseAssignment> tETETETE(IContext context)
-	{
-		Object result = tETETETEBuilder().execute(context);
-		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> coursemanagement.proxies.CourseAssignment.initialize(context, obj));
-	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder vAL_Content_FieldValidationBuilder(
 		coursemanagement.proxies.Content _content
 	)

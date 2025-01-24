@@ -124,6 +124,9 @@ public class UserActionsRegistrar
     registrator.registerUserAction(encryption.actions.PGPDecryptDocument.class);
     registrator.registerUserAction(encryption.actions.PGPEncryptDocument.class);
     registrator.registerUserAction(encryption.actions.ValidatePrivateKeyRing.class);
+    registrator.registerUserAction(excelimporter.actions.GetHeaderInformationFromExcelFile.class);
+    registrator.registerUserAction(excelimporter.actions.RefreshClass.class);
+    registrator.registerUserAction(excelimporter.actions.StartImportByTemplate.class);
     registrator.registerUserAction(mxmodelreflection.actions.JA_EnumValueCaptions.class);
     registrator.registerUserAction(mxmodelreflection.actions.JA_EnumValueLanguages.class);
     registrator.registerUserAction(mxmodelreflection.actions.JA_ReferenceObjects.class);
