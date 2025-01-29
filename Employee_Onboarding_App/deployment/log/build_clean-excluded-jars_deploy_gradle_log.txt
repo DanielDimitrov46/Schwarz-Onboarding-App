@@ -1,10 +1,10 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot, JAVA_VERSION=11.0.16.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.16.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.16.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 18088). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-18088.out.log
-Starting 2nd build in daemon [uptime: 6 mins 53.045 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 19% of 384 MiB]
+The client will now receive all logging from the daemon (pid: 19900). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-19900.out.log
+Starting 6th build in daemon [uptime: 1 hrs 33 mins 56.086 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 20% of 384 MiB]
 Using 16 worker leases.
-Now considering [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment, D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\vendorlib\temp] as hierarchies to watch
+Now considering [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
 File system watching is active
 Starting Build
@@ -23,14 +23,14 @@ Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifac
 Tasks that were excluded: []
 Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 :clean-excluded-jars (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[Execution worker Thread 14,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 13,5,main]) started.
 
 > Task :clean-excluded-jars UP-TO-DATE
 Caching disabled for task ':clean-excluded-jars' because:
   Build cache is disabled
 Task ':clean-excluded-jars' is not up-to-date because:
   Task has not declared any outputs despite executing actions.
-Resolve mutations for :copyDeploymentArtifacts (Thread[Execution worker Thread 14,5,main]) started.
+Resolve mutations for :copyDeploymentArtifacts (Thread[Execution worker,5,main]) started.
 :copyDeploymentArtifacts (Thread[Execution worker,5,main]) started.
 
 > Task :copyDeploymentArtifacts
@@ -38,38 +38,33 @@ Caching disabled for task ':copyDeploymentArtifacts' because:
   Build cache is disabled
 Task ':copyDeploymentArtifacts' is not up-to-date because:
   Task is untracked because: Always copy deployment artifacts
+Not watching anything anymore
 Resolve mutations for :copyLibs (Thread[Execution worker,5,main]) started.
-:copyLibs (Thread[Execution worker Thread 14,5,main]) started.
+:copyLibs (Thread[Execution worker,5,main]) started.
 
 > Task :copyLibs UP-TO-DATE
 Caching disabled for task ':copyLibs' because:
   Build cache is disabled
 Skipping task ':copyLibs' as it is up-to-date.
-Resolve mutations for :copyResources (Thread[Execution worker Thread 14,5,main]) started.
-:copyResources (Thread[Execution worker Thread 14,5,main]) started.
+Resolve mutations for :copyResources (Thread[Execution worker,5,main]) started.
+:copyResources (Thread[Execution worker Thread 13,5,main]) started.
 
 > Task :copyResources NO-SOURCE
 Skipping task ':copyResources' as it has no source files and no previous output files.
-Resolve mutations for :unzipDataSnapshot (Thread[Execution worker Thread 14,5,main]) started.
+Resolve mutations for :unzipDataSnapshot (Thread[Execution worker Thread 13,5,main]) started.
 :unzipDataSnapshot (Thread[Execution worker,5,main]) started.
 
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
-Resolve mutations for :deploy (Thread[Execution worker Thread 14,5,main]) started.
-:deploy (Thread[Execution worker,5,main]) started.
+Resolve mutations for :deploy (Thread[Execution worker Thread 13,5,main]) started.
+:deploy (Thread[Execution worker Thread 13,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 2s
+BUILD SUCCESSFUL in 1s
 3 actionable tasks: 1 executed, 2 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment]
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\.gradle\vcs-1) removing files not accessed on or after Fri Jan 17 22:44:30 EET 2025.
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\.gradle\vcs-1) cleanup deleted 0 files/directories.
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\.gradle\vcs-1) cleaned up in 0.002 secs.
-dependencies-accessors (D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\.gradle\8.5\dependencies-accessors) removing files not accessed on or after Fri Jan 17 22:44:30 EET 2025.
-dependencies-accessors (D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\.gradle\8.5\dependencies-accessors) cleanup deleted 0 files/directories.
-dependencies-accessors (D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\.gradle\8.5\dependencies-accessors) cleaned up in 0.0 secs.
 
 
 
