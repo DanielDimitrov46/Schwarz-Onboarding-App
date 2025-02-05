@@ -342,16 +342,6 @@ public final class Microflows
 			.execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> system.proxies.UserRole.initialize(context, obj));
 	}
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dUMMYBuilder()
-	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.DUMMY");
-		return builder;
-	}
-
-	public static void dUMMY(IContext context)
-	{
-		dUMMYBuilder().execute(context);
-	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder showPasswordFormBuilder(
 		administration.proxies.Account _account
 	)

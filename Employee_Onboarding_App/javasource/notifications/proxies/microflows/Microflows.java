@@ -16,21 +16,21 @@ public final class Microflows
 
 	// These are the microflows for the Notifications module
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Email_SendEmailForAssignedCourseBuilder(
-		coursemanagement.proxies.CourseAssignment _courseAssignment
+		coursemanagement.proxies.AssignedCourseTemplate _assignedCourseTemplate
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notifications.ACT_Email_SendEmailForAssignedCourse");
-		builder = builder.withParam("CourseAssignment", _courseAssignment);
+		builder = builder.withParam("AssignedCourseTemplate", _assignedCourseTemplate);
 		return builder;
 	}
 
 	public static void aCT_Email_SendEmailForAssignedCourse(
 		IContext context,
-		coursemanagement.proxies.CourseAssignment _courseAssignment
+		coursemanagement.proxies.AssignedCourseTemplate _assignedCourseTemplate
 	)
 	{
 		aCT_Email_SendEmailForAssignedCourseBuilder(
-				_courseAssignment
+				_assignedCourseTemplate
 			)
 			.execute(context);
 	}
@@ -45,21 +45,21 @@ public final class Microflows
 		aCT_Email_SendEmailForNewAccountBuilder().execute(context);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Email_SendEmailForSignUpCourseBuilder(
-		coursemanagement.proxies.CourseAssignment _courseAssignment
+		coursemanagement.proxies.SignUpCourseTemplate _signUpCourseTemplate
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notifications.ACT_Email_SendEmailForSignUpCourse");
-		builder = builder.withParam("CourseAssignment", _courseAssignment);
+		builder = builder.withParam("SignUpCourseTemplate", _signUpCourseTemplate);
 		return builder;
 	}
 
 	public static void aCT_Email_SendEmailForSignUpCourse(
 		IContext context,
-		coursemanagement.proxies.CourseAssignment _courseAssignment
+		coursemanagement.proxies.SignUpCourseTemplate _signUpCourseTemplate
 	)
 	{
 		aCT_Email_SendEmailForSignUpCourseBuilder(
-				_courseAssignment
+				_signUpCourseTemplate
 			)
 			.execute(context);
 	}
