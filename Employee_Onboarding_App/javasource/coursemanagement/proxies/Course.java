@@ -20,6 +20,7 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 	 */
 	public enum MemberNames
 	{
+		Number("Number"),
 		Name("Name"),
 		Description("Description"),
 		Duration("Duration"),
@@ -87,6 +88,42 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 			.stream()
 			.map(obj -> coursemanagement.proxies.Course.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
+	}
+
+	/**
+	 * @return value of Number
+	 */
+	public final java.lang.Integer getNumber()
+	{
+		return getNumber(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Number
+	 */
+	public final java.lang.Integer getNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.Number.toString());
+	}
+
+	/**
+	 * Set value of Number
+	 * @param number
+	 */
+	public final void setNumber(java.lang.Integer number)
+	{
+		setNumber(getContext(), number);
+	}
+
+	/**
+	 * Set value of Number
+	 * @param context
+	 * @param number
+	 */
+	public final void setNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer number)
+	{
+		getMendixObject().setValue(context, MemberNames.Number.toString(), number);
 	}
 
 	/**
