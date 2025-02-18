@@ -10,10 +10,11 @@ import * as style8 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onbo
 import * as style9 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/usermanagement/native/main";
 import * as style10 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/notifications/native/main";
 import * as style11 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/coursemanagement/native/main";
-import * as style12 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/emailconfiguration/native/main";
-import * as style13 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/excelexporter/native/main";
-import * as style14 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/theme/native/main";
+import * as style12 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/courseimportmidstage/native/main";
+import * as style13 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/emailconfiguration/native/main";
+import * as style14 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/themesource/excelexporter/native/main";
+import * as style15 from "D:/UKTC PROGRAMMING/Schwarz-Onboardin-App/Employee_Onboarding_App/theme/native/main";
 
 import { flatten } from "mendix/native";
 
-module.exports = flatten([style0, style1, style2, style3, style4, style5, style6, style7, style8, style9, style10, style11, style12, style13, style14]);
+module.exports = flatten([style0, style1, style2, style3, style4, style5, style6, style7, style8, style9, style10, style11, style12, style13, style14, style15]);

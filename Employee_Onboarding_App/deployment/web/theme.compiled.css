@@ -28082,4 +28082,15 @@ input[type=checkbox].three-state-checkbox + .control-label {
   background-color: gray;
 }
 
+.hideclosebutton .modal-dialog .modal-content .modal-header .close {
+  display: none;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
