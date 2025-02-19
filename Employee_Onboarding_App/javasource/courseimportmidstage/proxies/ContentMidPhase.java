@@ -4,16 +4,16 @@
 
 package courseimportmidstage.proxies;
 
-public class Content implements com.mendix.systemwideinterfaces.core.IEntityProxy
+public class ContentMidPhase implements com.mendix.systemwideinterfaces.core.IEntityProxy
 {
-	private final com.mendix.systemwideinterfaces.core.IMendixObject contentMendixObject;
+	private final com.mendix.systemwideinterfaces.core.IMendixObject contentMidPhaseMendixObject;
 
 	private final com.mendix.systemwideinterfaces.core.IContext context;
 
 	/**
 	 * Internal name of this entity
 	 */
-	public static final java.lang.String entityName = "CourseImportMidStage.Content";
+	public static final java.lang.String entityName = "CourseImportMidStage.ContentMidPhase";
 
 	/**
 	 * Enum describing members of this entity
@@ -38,21 +38,21 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 		}
 	}
 
-	public Content(com.mendix.systemwideinterfaces.core.IContext context)
+	public ContentMidPhase(com.mendix.systemwideinterfaces.core.IContext context)
 	{
 		this(context, com.mendix.core.Core.instantiate(context, entityName));
 	}
 
-	protected Content(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject contentMendixObject)
+	protected ContentMidPhase(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject contentMidPhaseMendixObject)
 	{
-		if (contentMendixObject == null) {
+		if (contentMidPhaseMendixObject == null) {
 			throw new java.lang.IllegalArgumentException("The given object cannot be null.");
 		}
-		if (!com.mendix.core.Core.isSubClassOf(entityName, contentMendixObject.getType())) {
+		if (!com.mendix.core.Core.isSubClassOf(entityName, contentMidPhaseMendixObject.getType())) {
 			throw new java.lang.IllegalArgumentException(String.format("The given object is not a %s", entityName));
 		}	
 
-		this.contentMendixObject = contentMendixObject;
+		this.contentMidPhaseMendixObject = contentMidPhaseMendixObject;
 		this.context = context;
 	}
 
@@ -63,23 +63,23 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	 * @param mendixObject The Mendix object for the new instance
 	 * @return a new instance of this proxy class
 	 */
-	public static courseimportmidstage.proxies.Content initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject mendixObject)
+	public static courseimportmidstage.proxies.ContentMidPhase initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject mendixObject)
 	{
-		return new courseimportmidstage.proxies.Content(context, mendixObject);
+		return new courseimportmidstage.proxies.ContentMidPhase(context, mendixObject);
 	}
 
-	public static courseimportmidstage.proxies.Content load(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixIdentifier mendixIdentifier) throws com.mendix.core.CoreException
+	public static courseimportmidstage.proxies.ContentMidPhase load(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixIdentifier mendixIdentifier) throws com.mendix.core.CoreException
 	{
 		com.mendix.systemwideinterfaces.core.IMendixObject mendixObject = com.mendix.core.Core.retrieveId(context, mendixIdentifier);
-		return courseimportmidstage.proxies.Content.initialize(context, mendixObject);
+		return courseimportmidstage.proxies.ContentMidPhase.initialize(context, mendixObject);
 	}
 
-	public static java.util.List<courseimportmidstage.proxies.Content> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
+	public static java.util.List<courseimportmidstage.proxies.ContentMidPhase> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
 	{
 		return com.mendix.core.Core.createXPathQuery(String.format("//%1$s%2$s", entityName, xpathConstraint))
 			.execute(context)
 			.stream()
-			.map(obj -> courseimportmidstage.proxies.Content.initialize(context, obj))
+			.map(obj -> courseimportmidstage.proxies.ContentMidPhase.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
 	}
 
@@ -194,7 +194,7 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	@java.lang.Override
 	public final com.mendix.systemwideinterfaces.core.IMendixObject getMendixObject()
 	{
-		return contentMendixObject;
+		return contentMidPhaseMendixObject;
 	}
 
 	@java.lang.Override
@@ -211,7 +211,7 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 		}
 		if (obj != null && getClass().equals(obj.getClass()))
 		{
-			final courseimportmidstage.proxies.Content that = (courseimportmidstage.proxies.Content) obj;
+			final courseimportmidstage.proxies.ContentMidPhase that = (courseimportmidstage.proxies.ContentMidPhase) obj;
 			return getMendixObject().equals(that.getMendixObject());
 		}
 		return false;
