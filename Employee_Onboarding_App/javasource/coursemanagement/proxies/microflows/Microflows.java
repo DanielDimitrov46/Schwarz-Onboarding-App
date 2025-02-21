@@ -77,6 +77,48 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseAssignement_Assign_SaveBuilder(
+		coursemanagement.proxies.CourseAssignment _courseAssignment,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.ACT_CourseAssignement_Assign_Save");
+		builder = builder.withParam("CourseAssignment", _courseAssignment);
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static void aCT_CourseAssignement_Assign_Save(
+		IContext context,
+		coursemanagement.proxies.CourseAssignment _courseAssignment,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		aCT_CourseAssignement_Assign_SaveBuilder(
+				_courseAssignment,
+				_course
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseAssignement_CreateBuilder(
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.ACT_CourseAssignement_Create");
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static void aCT_CourseAssignement_Create(
+		IContext context,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		aCT_CourseAssignement_CreateBuilder(
+				_course
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseAssignement_ExistsBuilder(
 		coursemanagement.proxies.CourseAssignment _courseAssignment,
 		usermanagement.proxies.User _user,
@@ -125,6 +167,25 @@ public final class Microflows
 		aCT_CourseAssignement_SaveBuilder(
 				_courseAssignment,
 				_course_2
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseAssignment_AssignBuilder(
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.ACT_CourseAssignment_Assign");
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static void aCT_CourseAssignment_Assign(
+		IContext context,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		aCT_CourseAssignment_AssignBuilder(
+				_course
 			)
 			.execute(context);
 	}
@@ -177,6 +238,26 @@ public final class Microflows
 	)
 	{
 		Object result = dS_CourseAssignement_Retrieve_CurrentCourseBuilder(
+				_course
+			)
+			.execute(context);
+		return result == null ? null : coursemanagement.proxies.CourseAssignment.initialize(context, (IMendixObject) result);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_CourseAssignment_CurrentUserBuilder(
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.DS_CourseAssignment_CurrentUser");
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static coursemanagement.proxies.CourseAssignment dS_CourseAssignment_CurrentUser(
+		IContext context,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		Object result = dS_CourseAssignment_CurrentUserBuilder(
 				_course
 			)
 			.execute(context);

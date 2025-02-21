@@ -20,6 +20,7 @@ public class CourseAssignment implements com.mendix.systemwideinterfaces.core.IE
 	 */
 	public enum MemberNames
 	{
+		Assignement_Status("Assignement_Status"),
 		CourseAssignment_Course("CourseManagement.CourseAssignment_Course"),
 		CourseAssignment_User("CourseManagement.CourseAssignment_User");
 
@@ -80,6 +81,51 @@ public class CourseAssignment implements com.mendix.systemwideinterfaces.core.IE
 			.stream()
 			.map(obj -> coursemanagement.proxies.CourseAssignment.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
+	}
+
+	/**
+	 * Get value of Assignement_Status
+	 * @param assignement_status
+	 */
+	public final coursemanagement.proxies.ENUM_CourseAssignement_Status getAssignement_Status()
+	{
+		return getAssignement_Status(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Assignement_Status
+	 */
+	public final coursemanagement.proxies.ENUM_CourseAssignement_Status getAssignement_Status(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.Assignement_Status.toString());
+		if (obj == null) {
+			return null;
+		}
+		return coursemanagement.proxies.ENUM_CourseAssignement_Status.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of Assignement_Status
+	 * @param assignement_status
+	 */
+	public final void setAssignement_Status(coursemanagement.proxies.ENUM_CourseAssignement_Status assignement_status)
+	{
+		setAssignement_Status(getContext(), assignement_status);
+	}
+
+	/**
+	 * Set value of Assignement_Status
+	 * @param context
+	 * @param assignement_status
+	 */
+	public final void setAssignement_Status(com.mendix.systemwideinterfaces.core.IContext context, coursemanagement.proxies.ENUM_CourseAssignement_Status assignement_status)
+	{
+		if (assignement_status != null) {
+			getMendixObject().setValue(context, MemberNames.Assignement_Status.toString(), assignement_status.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.Assignement_Status.toString(), null);
+		}
 	}
 
 	/**
