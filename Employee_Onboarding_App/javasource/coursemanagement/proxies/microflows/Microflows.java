@@ -121,28 +121,28 @@ public final class Microflows
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseAssignement_ExistsBuilder(
 		coursemanagement.proxies.CourseAssignment _courseAssignment,
-		usermanagement.proxies.User _user,
-		usermanagement.proxies.User _current_user
+		usermanagement.proxies.User _current_user,
+		coursemanagement.proxies.Course _course
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.ACT_CourseAssignement_Exists");
 		builder = builder.withParam("CourseAssignment", _courseAssignment);
-		builder = builder.withParam("User", _user);
 		builder = builder.withParam("current_user", _current_user);
+		builder = builder.withParam("Course", _course);
 		return builder;
 	}
 
 	public static boolean aCT_CourseAssignement_Exists(
 		IContext context,
 		coursemanagement.proxies.CourseAssignment _courseAssignment,
-		usermanagement.proxies.User _user,
-		usermanagement.proxies.User _current_user
+		usermanagement.proxies.User _current_user,
+		coursemanagement.proxies.Course _course
 	)
 	{
 		Object result = aCT_CourseAssignement_ExistsBuilder(
 				_courseAssignment,
-				_user,
-				_current_user
+				_current_user,
+				_course
 			)
 			.execute(context);
 		return (boolean) result;

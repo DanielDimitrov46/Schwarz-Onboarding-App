@@ -27,7 +27,8 @@ public class CourseMidPhase implements com.mendix.systemwideinterfaces.core.IEnt
 		TypeOfCourse("TypeOfCourse"),
 		PointsForCourse("PointsForCourse"),
 		StartDate("StartDate"),
-		DifficultyOfCourse("DifficultyOfCourse");
+		DifficultyOfCourse("DifficultyOfCourse"),
+		CourseMidPhaseImage_CourseMidPhase("CourseImportMidStage.CourseMidPhaseImage_CourseMidPhase");
 
 		private final java.lang.String metaName;
 
@@ -391,6 +392,53 @@ public class CourseMidPhase implements com.mendix.systemwideinterfaces.core.IEnt
 			getMendixObject().setValue(context, MemberNames.DifficultyOfCourse.toString(), difficultyofcourse.toString());
 		} else {
 			getMendixObject().setValue(context, MemberNames.DifficultyOfCourse.toString(), null);
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of CourseMidPhaseImage_CourseMidPhase
+	 */
+	public final courseimportmidstage.proxies.CourseMidPhaseImage getCourseMidPhaseImage_CourseMidPhase() throws com.mendix.core.CoreException
+	{
+		return getCourseMidPhaseImage_CourseMidPhase(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of CourseMidPhaseImage_CourseMidPhase
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final courseimportmidstage.proxies.CourseMidPhaseImage getCourseMidPhaseImage_CourseMidPhase(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		courseimportmidstage.proxies.CourseMidPhaseImage result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.CourseMidPhaseImage_CourseMidPhase.toString());
+		if (identifier != null) {
+			result = courseimportmidstage.proxies.CourseMidPhaseImage.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of CourseMidPhaseImage_CourseMidPhase
+	 * @param coursemidphaseimage_coursemidphase
+	 */
+	public final void setCourseMidPhaseImage_CourseMidPhase(courseimportmidstage.proxies.CourseMidPhaseImage coursemidphaseimage_coursemidphase)
+	{
+		setCourseMidPhaseImage_CourseMidPhase(getContext(), coursemidphaseimage_coursemidphase);
+	}
+
+	/**
+	 * Set value of CourseMidPhaseImage_CourseMidPhase
+	 * @param context
+	 * @param coursemidphaseimage_coursemidphase
+	 */
+	public final void setCourseMidPhaseImage_CourseMidPhase(com.mendix.systemwideinterfaces.core.IContext context, courseimportmidstage.proxies.CourseMidPhaseImage coursemidphaseimage_coursemidphase)
+	{
+		if (coursemidphaseimage_coursemidphase == null) {
+			getMendixObject().setValue(context, MemberNames.CourseMidPhaseImage_CourseMidPhase.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.CourseMidPhaseImage_CourseMidPhase.toString(), coursemidphaseimage_coursemidphase.getMendixObject().getId());
 		}
 	}
 

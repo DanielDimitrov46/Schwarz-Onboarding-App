@@ -34,6 +34,44 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseMidPhaseImage_CreateBuilder(
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.ACT_CourseMidPhaseImage_Create");
+		builder = builder.withParam("CourseMidPhase", _courseMidPhase);
+		return builder;
+	}
+
+	public static void aCT_CourseMidPhaseImage_Create(
+		IContext context,
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		aCT_CourseMidPhaseImage_CreateBuilder(
+				_courseMidPhase
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseMidPhaseImage_SaveBuilder(
+		courseimportmidstage.proxies.CourseMidPhaseImage _courseMidPhaseImage
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.ACT_CourseMidPhaseImage_Save");
+		builder = builder.withParam("CourseMidPhaseImage", _courseMidPhaseImage);
+		return builder;
+	}
+
+	public static void aCT_CourseMidPhaseImage_Save(
+		IContext context,
+		courseimportmidstage.proxies.CourseMidPhaseImage _courseMidPhaseImage
+	)
+	{
+		aCT_CourseMidPhaseImage_SaveBuilder(
+				_courseMidPhaseImage
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dummyBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.dummy");
