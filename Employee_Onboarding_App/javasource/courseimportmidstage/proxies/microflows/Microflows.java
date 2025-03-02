@@ -15,6 +15,44 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the CourseImportMidStage module
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_ContentMidPhase_CreateBuilder(
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.ACT_ContentMidPhase_Create");
+		builder = builder.withParam("CourseMidPhase", _courseMidPhase);
+		return builder;
+	}
+
+	public static void aCT_ContentMidPhase_Create(
+		IContext context,
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		aCT_ContentMidPhase_CreateBuilder(
+				_courseMidPhase
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_ContentMidPhase_SaveBuilder(
+		courseimportmidstage.proxies.ContentMidPhase _contentMidPhase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.ACT_ContentMidPhase_Save");
+		builder = builder.withParam("ContentMidPhase", _contentMidPhase);
+		return builder;
+	}
+
+	public static void aCT_ContentMidPhase_Save(
+		IContext context,
+		courseimportmidstage.proxies.ContentMidPhase _contentMidPhase
+	)
+	{
+		aCT_ContentMidPhase_SaveBuilder(
+				_contentMidPhase
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Course_CreateCourseBuilder(
 		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
 	)
@@ -30,6 +68,25 @@ public final class Microflows
 	)
 	{
 		aCT_Course_CreateCourseBuilder(
+				_courseMidPhase
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseMidPhase_Course_ImportBuilder(
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.ACT_CourseMidPhase_Course_Import");
+		builder = builder.withParam("CourseMidPhase", _courseMidPhase);
+		return builder;
+	}
+
+	public static void aCT_CourseMidPhase_Course_Import(
+		IContext context,
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		aCT_CourseMidPhase_Course_ImportBuilder(
 				_courseMidPhase
 			)
 			.execute(context);
