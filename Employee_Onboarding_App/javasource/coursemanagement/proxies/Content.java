@@ -22,6 +22,7 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	{
 		ContentTitle("ContentTitle"),
 		ContentDescription("ContentDescription"),
+		DateForContent("DateForContent"),
 		Content_Course("CourseManagement.Content_Course");
 
 		private final java.lang.String metaName;
@@ -153,6 +154,42 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	public final void setContentDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String contentdescription)
 	{
 		getMendixObject().setValue(context, MemberNames.ContentDescription.toString(), contentdescription);
+	}
+
+	/**
+	 * @return value of DateForContent
+	 */
+	public final java.util.Date getDateForContent()
+	{
+		return getDateForContent(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of DateForContent
+	 */
+	public final java.util.Date getDateForContent(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.util.Date) getMendixObject().getValue(context, MemberNames.DateForContent.toString());
+	}
+
+	/**
+	 * Set value of DateForContent
+	 * @param dateforcontent
+	 */
+	public final void setDateForContent(java.util.Date dateforcontent)
+	{
+		setDateForContent(getContext(), dateforcontent);
+	}
+
+	/**
+	 * Set value of DateForContent
+	 * @param context
+	 * @param dateforcontent
+	 */
+	public final void setDateForContent(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date dateforcontent)
+	{
+		getMendixObject().setValue(context, MemberNames.DateForContent.toString(), dateforcontent);
 	}
 
 	/**

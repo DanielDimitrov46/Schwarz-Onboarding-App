@@ -22,7 +22,8 @@ public class ContentMidPhase implements com.mendix.systemwideinterfaces.core.IEn
 	{
 		Number("Number"),
 		ContentTitle("ContentTitle"),
-		ContentDescription("ContentDescription");
+		ContentDescription("ContentDescription"),
+		ContentDate("ContentDate");
 
 		private final java.lang.String metaName;
 
@@ -189,6 +190,42 @@ public class ContentMidPhase implements com.mendix.systemwideinterfaces.core.IEn
 	public final void setContentDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String contentdescription)
 	{
 		getMendixObject().setValue(context, MemberNames.ContentDescription.toString(), contentdescription);
+	}
+
+	/**
+	 * @return value of ContentDate
+	 */
+	public final java.util.Date getContentDate()
+	{
+		return getContentDate(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ContentDate
+	 */
+	public final java.util.Date getContentDate(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.util.Date) getMendixObject().getValue(context, MemberNames.ContentDate.toString());
+	}
+
+	/**
+	 * Set value of ContentDate
+	 * @param contentdate
+	 */
+	public final void setContentDate(java.util.Date contentdate)
+	{
+		setContentDate(getContext(), contentdate);
+	}
+
+	/**
+	 * Set value of ContentDate
+	 * @param context
+	 * @param contentdate
+	 */
+	public final void setContentDate(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date contentdate)
+	{
+		getMendixObject().setValue(context, MemberNames.ContentDate.toString(), contentdate);
 	}
 
 	@java.lang.Override
