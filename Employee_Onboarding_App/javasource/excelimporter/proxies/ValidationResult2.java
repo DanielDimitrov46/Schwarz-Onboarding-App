@@ -6,10 +6,10 @@ package excelimporter.proxies;
 
 public enum ValidationResult2
 {
-	NoInputParams(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoInputParams" } }),
-	WrongNrOfInputParams(new java.lang.String[][] { new java.lang.String[] { "en_US", "WrongNrOfInputParams" } }),
-	WrongReturnType(new java.lang.String[][] { new java.lang.String[] { "en_US", "WrongReturnType" } }),
-	Valid(new java.lang.String[][] { new java.lang.String[] { "en_US", "Valid" } });
+	NoInputParams(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoInputParams" }, new java.lang.String[] { "de_DE", "Keine Eingabeparameter" } }),
+	WrongNrOfInputParams(new java.lang.String[][] { new java.lang.String[] { "en_US", "WrongNrOfInputParams" }, new java.lang.String[] { "de_DE", "Falsche NRO-Eingabeparameter" } }),
+	WrongReturnType(new java.lang.String[][] { new java.lang.String[] { "en_US", "WrongReturnType" }, new java.lang.String[] { "de_DE", "Falscher Rückgabetyp" } }),
+	Valid(new java.lang.String[][] { new java.lang.String[] { "en_US", "Valid" }, new java.lang.String[] { "de_DE", "Gültig" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

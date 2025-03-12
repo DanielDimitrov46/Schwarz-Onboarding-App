@@ -6,8 +6,8 @@ package excelimporter.proxies;
 
 public enum YesNo
 {
-	Yes(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes" } }),
-	No(new java.lang.String[][] { new java.lang.String[] { "en_US", "No" } });
+	Yes(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes" }, new java.lang.String[] { "de_DE", "Ja" } }),
+	No(new java.lang.String[][] { new java.lang.String[] { "en_US", "No" }, new java.lang.String[] { "de_DE", "Nein" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

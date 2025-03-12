@@ -6,10 +6,10 @@ package excelimporter.proxies;
 
 public enum ImportActions
 {
-	SynchronizeObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Synchronize objects" } }),
-	SynchronizeOnlyExisting(new java.lang.String[][] { new java.lang.String[] { "en_US", "Synchronize only existing objects, ignore others" } }),
-	CreateObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Create an object for each row" } }),
-	OnlyCreateNewObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Only create not existing object" } });
+	SynchronizeObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Synchronize objects" }, new java.lang.String[] { "de_DE", "Objekte synchronisieren" } }),
+	SynchronizeOnlyExisting(new java.lang.String[][] { new java.lang.String[] { "en_US", "Synchronize only existing objects, ignore others" }, new java.lang.String[] { "de_DE", "Synchronisiere nur existierende Objekte, ignoriere andere" } }),
+	CreateObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Create an object for each row" }, new java.lang.String[] { "de_DE", "Erstellen Sie ein Objekt für jede Zeile" } }),
+	OnlyCreateNewObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Only create not existing object" }, new java.lang.String[] { "de_DE", "Nur ein nicht vorhandenes Objekt erstellen" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

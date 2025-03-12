@@ -6,8 +6,8 @@ package excelimporter.proxies;
 
 public enum TemplateType
 {
-	Normal(new java.lang.String[][] { new java.lang.String[] { "en_US", "Normal" } }),
-	Wizard(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wizard" } });
+	Normal(new java.lang.String[][] { new java.lang.String[] { "en_US", "Normal" }, new java.lang.String[] { "de_DE", "Normal" } }),
+	Wizard(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wizard" }, new java.lang.String[] { "de_DE", "Zauberer" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

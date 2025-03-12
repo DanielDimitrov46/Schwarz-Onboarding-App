@@ -6,9 +6,9 @@ package excelimporter.proxies;
 
 public enum Status
 {
-	INFO(new java.lang.String[][] { new java.lang.String[] { "en_US", "INFO" } }),
-	VALID(new java.lang.String[][] { new java.lang.String[] { "en_US", "Valid" } }),
-	INVALID(new java.lang.String[][] { new java.lang.String[] { "en_US", "INVALID" } });
+	INFO(new java.lang.String[][] { new java.lang.String[] { "en_US", "INFO" }, new java.lang.String[] { "de_DE", "INFO" } }),
+	VALID(new java.lang.String[][] { new java.lang.String[] { "en_US", "Valid" }, new java.lang.String[] { "de_DE", "Gültig" } }),
+	INVALID(new java.lang.String[][] { new java.lang.String[] { "en_US", "INVALID" }, new java.lang.String[] { "de_DE", "UNGÜLTIG" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

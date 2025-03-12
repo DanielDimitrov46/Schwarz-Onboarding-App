@@ -20,10 +20,12 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	 */
 	public enum MemberNames
 	{
+		Number("Number"),
 		ContentTitle("ContentTitle"),
 		ContentDescription("ContentDescription"),
 		DateForContent("DateForContent"),
-		Content_Course("CourseManagement.Content_Course");
+		Content_Course("CourseManagement.Content_Course"),
+		Content_ContentImage("CourseManagement.Content_ContentImage");
 
 		private final java.lang.String metaName;
 
@@ -82,6 +84,42 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 			.stream()
 			.map(obj -> coursemanagement.proxies.Content.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
+	}
+
+	/**
+	 * @return value of Number
+	 */
+	public final java.lang.Integer getNumber()
+	{
+		return getNumber(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Number
+	 */
+	public final java.lang.Integer getNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.Number.toString());
+	}
+
+	/**
+	 * Set value of Number
+	 * @param number
+	 */
+	public final void setNumber(java.lang.Integer number)
+	{
+		setNumber(getContext(), number);
+	}
+
+	/**
+	 * Set value of Number
+	 * @param context
+	 * @param number
+	 */
+	public final void setNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer number)
+	{
+		getMendixObject().setValue(context, MemberNames.Number.toString(), number);
 	}
 
 	/**
@@ -236,6 +274,53 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 			getMendixObject().setValue(context, MemberNames.Content_Course.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.Content_Course.toString(), content_course.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of Content_ContentImage
+	 */
+	public final coursemanagement.proxies.ContentImage getContent_ContentImage() throws com.mendix.core.CoreException
+	{
+		return getContent_ContentImage(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Content_ContentImage
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final coursemanagement.proxies.ContentImage getContent_ContentImage(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		coursemanagement.proxies.ContentImage result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Content_ContentImage.toString());
+		if (identifier != null) {
+			result = coursemanagement.proxies.ContentImage.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of Content_ContentImage
+	 * @param content_contentimage
+	 */
+	public final void setContent_ContentImage(coursemanagement.proxies.ContentImage content_contentimage)
+	{
+		setContent_ContentImage(getContext(), content_contentimage);
+	}
+
+	/**
+	 * Set value of Content_ContentImage
+	 * @param context
+	 * @param content_contentimage
+	 */
+	public final void setContent_ContentImage(com.mendix.systemwideinterfaces.core.IContext context, coursemanagement.proxies.ContentImage content_contentimage)
+	{
+		if (content_contentimage == null) {
+			getMendixObject().setValue(context, MemberNames.Content_ContentImage.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.Content_ContentImage.toString(), content_contentimage.getMendixObject().getId());
 		}
 	}
 

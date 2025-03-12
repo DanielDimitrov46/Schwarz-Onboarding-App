@@ -6,10 +6,10 @@ package excelimporter.proxies;
 
 public enum ReferenceHandlingEnum
 {
-	FindCreate(new java.lang.String[][] { new java.lang.String[] { "en_US", "Find reference, create if not found" } }),
-	FindIgnore(new java.lang.String[][] { new java.lang.String[] { "en_US", "Find reference, ignore if not found" } }),
-	CreateEverything(new java.lang.String[][] { new java.lang.String[] { "en_US", "Create all referenced objects" } }),
-	OnlyCreateNewObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Only create not existing objects" } });
+	FindCreate(new java.lang.String[][] { new java.lang.String[] { "en_US", "Find reference, create if not found" }, new java.lang.String[] { "de_DE", "Referenz finden, erstellen, falls nicht gefunden" } }),
+	FindIgnore(new java.lang.String[][] { new java.lang.String[] { "en_US", "Find reference, ignore if not found" }, new java.lang.String[] { "de_DE", "Referenz finden, ignorieren, falls nicht gefunden" } }),
+	CreateEverything(new java.lang.String[][] { new java.lang.String[] { "en_US", "Create all referenced objects" }, new java.lang.String[] { "de_DE", "Alle referenzierten Objekte erstellen" } }),
+	OnlyCreateNewObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Only create not existing objects" }, new java.lang.String[] { "de_DE", "Nur nicht existierende Objekte erstellen" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

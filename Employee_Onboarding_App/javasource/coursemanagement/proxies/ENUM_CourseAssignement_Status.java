@@ -6,10 +6,10 @@ package coursemanagement.proxies;
 
 public enum ENUM_CourseAssignement_Status
 {
-	Completed(new java.lang.String[][] { new java.lang.String[] { "en_US", "Completed" } }),
-	Assigned(new java.lang.String[][] { new java.lang.String[] { "en_US", "Assigned" } }),
-	Signed_up(new java.lang.String[][] { new java.lang.String[] { "en_US", "Signed up" } }),
-	Unasigned(new java.lang.String[][] { new java.lang.String[] { "en_US", "Unasigned" } });
+	Completed(new java.lang.String[][] { new java.lang.String[] { "en_US", "Completed" }, new java.lang.String[] { "de_DE", "Abgeschlossen" } }),
+	Assigned(new java.lang.String[][] { new java.lang.String[] { "en_US", "Assigned" }, new java.lang.String[] { "de_DE", "Zugewiesen" } }),
+	Signed_up(new java.lang.String[][] { new java.lang.String[] { "en_US", "Signed up" }, new java.lang.String[] { "de_DE", "Angemeldet" } }),
+	Unasigned(new java.lang.String[][] { new java.lang.String[] { "en_US", "Unasigned" }, new java.lang.String[] { "de_DE", "Unsigniert" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

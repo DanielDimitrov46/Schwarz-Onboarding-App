@@ -6,9 +6,9 @@ package excelimporter.proxies;
 
 public enum RemoveIndicator
 {
-	TrackChanges(new java.lang.String[][] { new java.lang.String[] { "en_US", "Track changes" } }),
-	RemoveUnchangedObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Remove unchanged objects" } }),
-	Nothing(new java.lang.String[][] { new java.lang.String[] { "en_US", "Nothing" } });
+	TrackChanges(new java.lang.String[][] { new java.lang.String[] { "en_US", "Track changes" }, new java.lang.String[] { "de_DE", "Änderungen nachverfolgen" } }),
+	RemoveUnchangedObjects(new java.lang.String[][] { new java.lang.String[] { "en_US", "Remove unchanged objects" }, new java.lang.String[] { "de_DE", "Unveränderte Objekte entfernen" } }),
+	Nothing(new java.lang.String[][] { new java.lang.String[] { "en_US", "Nothing" }, new java.lang.String[] { "de_DE", "Nichts" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

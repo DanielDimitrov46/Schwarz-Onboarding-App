@@ -129,14 +129,4 @@ public final class Microflows
 			)
 			.execute(context);
 	}
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dummyBuilder()
-	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.dummy");
-		return builder;
-	}
-
-	public static void dummy(IContext context)
-	{
-		dummyBuilder().execute(context);
-	}
 }

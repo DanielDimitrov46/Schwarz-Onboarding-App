@@ -6,10 +6,10 @@ package excelimporter.proxies;
 
 public enum ReferenceKeyType
 {
-	NoKey(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoKey" } }),
-	YesOnlyAssociatedObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes, only for the associated object" } }),
-	YesOnlyMainObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes, only for the main object" } }),
-	YesMainAndAssociatedObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes, Both for the main object and the associated object" } });
+	NoKey(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoKey" }, new java.lang.String[] { "de_DE", "Kein Schlüssel" } }),
+	YesOnlyAssociatedObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes, only for the associated object" }, new java.lang.String[] { "de_DE", "Ja, nur für das zugehörige Objekt" } }),
+	YesOnlyMainObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes, only for the main object" }, new java.lang.String[] { "de_DE", "Ja, nur für das Hauptobjekt" } }),
+	YesMainAndAssociatedObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "Yes, Both for the main object and the associated object" }, new java.lang.String[] { "de_DE", "Ja, sowohl für das Hauptobjekt als auch für das zugehörige Objekt" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

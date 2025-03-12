@@ -6,17 +6,17 @@ package excelimporter.proxies;
 
 public enum ValidationResult
 {
-	UnUsed(new java.lang.String[][] { new java.lang.String[] { "en_US", "UnUsed" } }),
-	ValidAttribute(new java.lang.String[][] { new java.lang.String[] { "en_US", "ValidAttribute" } }),
-	ValidReference(new java.lang.String[][] { new java.lang.String[] { "en_US", "ValidReference" } }),
-	NoReferenceSelected(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoReferenceSelected" } }),
-	NoReferencedObjectSelected(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoReferencedObjectSelected" } }),
-	NoAttributeSelected(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoAttributeSelected" } }),
-	InvalidAttribute(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidAttribute" } }),
-	InvalidReference(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidReference" } }),
-	InvalidReferencedObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidReferencedObject" } }),
-	NoAssociationKeys(new java.lang.String[][] { new java.lang.String[] { "en_US", "No key columns for the association" } }),
-	InvalidAutoNumberSelection(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidAutoNumberSelection" } });
+	UnUsed(new java.lang.String[][] { new java.lang.String[] { "en_US", "UnUsed" }, new java.lang.String[] { "de_DE", "Unbenutzt" } }),
+	ValidAttribute(new java.lang.String[][] { new java.lang.String[] { "en_US", "ValidAttribute" }, new java.lang.String[] { "de_DE", "Gültiges Attribut" } }),
+	ValidReference(new java.lang.String[][] { new java.lang.String[] { "en_US", "ValidReference" }, new java.lang.String[] { "de_DE", "Gültige Referenz" } }),
+	NoReferenceSelected(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoReferenceSelected" }, new java.lang.String[] { "de_DE", "Keine Referenzen ausgewählt" } }),
+	NoReferencedObjectSelected(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoReferencedObjectSelected" }, new java.lang.String[] { "de_DE", "Kein referenziertes Objekt ausgewählt" } }),
+	NoAttributeSelected(new java.lang.String[][] { new java.lang.String[] { "en_US", "NoAttributeSelected" }, new java.lang.String[] { "de_DE", "Kein Attribut ausgewählt" } }),
+	InvalidAttribute(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidAttribute" }, new java.lang.String[] { "de_DE", "Ungültiges Attribut" } }),
+	InvalidReference(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidReference" }, new java.lang.String[] { "de_DE", "Ungültiger Verweis" } }),
+	InvalidReferencedObject(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidReferencedObject" }, new java.lang.String[] { "de_DE", "Ungültiges referenziertes Objekt" } }),
+	NoAssociationKeys(new java.lang.String[][] { new java.lang.String[] { "en_US", "No key columns for the association" }, new java.lang.String[] { "de_DE", "Keine Schlüsselspalten für den Verband" } }),
+	InvalidAutoNumberSelection(new java.lang.String[][] { new java.lang.String[] { "en_US", "InvalidAutoNumberSelection" }, new java.lang.String[] { "de_DE", "Ungültige Autonummernauswahl" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

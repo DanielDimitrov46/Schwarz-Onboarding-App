@@ -6,10 +6,10 @@ package coursemanagement.proxies;
 
 public enum ENUM_Course_Difficulty
 {
-	Begginer(new java.lang.String[][] { new java.lang.String[] { "en_US", "Begginer" } }),
-	Rapid(new java.lang.String[][] { new java.lang.String[] { "en_US", "Rapid" } }),
-	Intermediate(new java.lang.String[][] { new java.lang.String[] { "en_US", "Intermediate" } }),
-	Advanced(new java.lang.String[][] { new java.lang.String[] { "en_US", "Advanced" } });
+	Begginer(new java.lang.String[][] { new java.lang.String[] { "en_US", "Begginer" }, new java.lang.String[] { "de_DE", "Anfänger" } }),
+	Rapid(new java.lang.String[][] { new java.lang.String[] { "en_US", "Rapid" }, new java.lang.String[] { "de_DE", "Rapid" } }),
+	Intermediate(new java.lang.String[][] { new java.lang.String[] { "en_US", "Intermediate" }, new java.lang.String[] { "de_DE", "Fortgeschritten" } }),
+	Advanced(new java.lang.String[][] { new java.lang.String[] { "en_US", "Advanced" }, new java.lang.String[] { "de_DE", "Fortgeschritten" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 
