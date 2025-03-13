@@ -189,6 +189,25 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseContent_NextPageBuilder(
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.ACT_CourseContent_NextPage");
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static void aCT_CourseContent_NextPage(
+		IContext context,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		aCT_CourseContent_NextPageBuilder(
+				_course
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CourseImage_UploadBuilder(
 		coursemanagement.proxies.CourseImage _courseImage,
 		coursemanagement.proxies.Course _course

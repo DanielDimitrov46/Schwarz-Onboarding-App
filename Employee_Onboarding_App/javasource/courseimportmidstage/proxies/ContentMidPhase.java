@@ -23,7 +23,8 @@ public class ContentMidPhase implements com.mendix.systemwideinterfaces.core.IEn
 		Number("Number"),
 		ContentTitle("ContentTitle"),
 		ContentDescription("ContentDescription"),
-		ContentDate("ContentDate");
+		ContentDate("ContentDate"),
+		ContentMidPhase_CourseMidPhase("CourseImportMidStage.ContentMidPhase_CourseMidPhase");
 
 		private final java.lang.String metaName;
 
@@ -226,6 +227,53 @@ public class ContentMidPhase implements com.mendix.systemwideinterfaces.core.IEn
 	public final void setContentDate(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date contentdate)
 	{
 		getMendixObject().setValue(context, MemberNames.ContentDate.toString(), contentdate);
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of ContentMidPhase_CourseMidPhase
+	 */
+	public final courseimportmidstage.proxies.CourseMidPhase getContentMidPhase_CourseMidPhase() throws com.mendix.core.CoreException
+	{
+		return getContentMidPhase_CourseMidPhase(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ContentMidPhase_CourseMidPhase
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final courseimportmidstage.proxies.CourseMidPhase getContentMidPhase_CourseMidPhase(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		courseimportmidstage.proxies.CourseMidPhase result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.ContentMidPhase_CourseMidPhase.toString());
+		if (identifier != null) {
+			result = courseimportmidstage.proxies.CourseMidPhase.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of ContentMidPhase_CourseMidPhase
+	 * @param contentmidphase_coursemidphase
+	 */
+	public final void setContentMidPhase_CourseMidPhase(courseimportmidstage.proxies.CourseMidPhase contentmidphase_coursemidphase)
+	{
+		setContentMidPhase_CourseMidPhase(getContext(), contentmidphase_coursemidphase);
+	}
+
+	/**
+	 * Set value of ContentMidPhase_CourseMidPhase
+	 * @param context
+	 * @param contentmidphase_coursemidphase
+	 */
+	public final void setContentMidPhase_CourseMidPhase(com.mendix.systemwideinterfaces.core.IContext context, courseimportmidstage.proxies.CourseMidPhase contentmidphase_coursemidphase)
+	{
+		if (contentmidphase_coursemidphase == null) {
+			getMendixObject().setValue(context, MemberNames.ContentMidPhase_CourseMidPhase.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.ContentMidPhase_CourseMidPhase.toString(), contentmidphase_coursemidphase.getMendixObject().getId());
+		}
 	}
 
 	@java.lang.Override

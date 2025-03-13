@@ -97,6 +97,16 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Trainee_AssignBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_Trainee_Assign");
+		return builder;
+	}
+
+	public static void aCT_Trainee_Assign(IContext context)
+	{
+		aCT_Trainee_AssignBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_ChangePasswordBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData
 	)
