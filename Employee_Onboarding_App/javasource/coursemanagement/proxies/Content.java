@@ -24,6 +24,7 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 		ContentTitle("ContentTitle"),
 		ContentDescription("ContentDescription"),
 		DateForContent("DateForContent"),
+		SelfLearningStatus("SelfLearningStatus"),
 		Content_Course("CourseManagement.Content_Course"),
 		Content_ContentImage("CourseManagement.Content_ContentImage");
 
@@ -228,6 +229,51 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 	public final void setDateForContent(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date dateforcontent)
 	{
 		getMendixObject().setValue(context, MemberNames.DateForContent.toString(), dateforcontent);
+	}
+
+	/**
+	 * Get value of SelfLearningStatus
+	 * @param selflearningstatus
+	 */
+	public final coursemanagement.proxies.ENUM_Content_SelfLearning_Status getSelfLearningStatus()
+	{
+		return getSelfLearningStatus(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of SelfLearningStatus
+	 */
+	public final coursemanagement.proxies.ENUM_Content_SelfLearning_Status getSelfLearningStatus(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.SelfLearningStatus.toString());
+		if (obj == null) {
+			return null;
+		}
+		return coursemanagement.proxies.ENUM_Content_SelfLearning_Status.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of SelfLearningStatus
+	 * @param selflearningstatus
+	 */
+	public final void setSelfLearningStatus(coursemanagement.proxies.ENUM_Content_SelfLearning_Status selflearningstatus)
+	{
+		setSelfLearningStatus(getContext(), selflearningstatus);
+	}
+
+	/**
+	 * Set value of SelfLearningStatus
+	 * @param context
+	 * @param selflearningstatus
+	 */
+	public final void setSelfLearningStatus(com.mendix.systemwideinterfaces.core.IContext context, coursemanagement.proxies.ENUM_Content_SelfLearning_Status selflearningstatus)
+	{
+		if (selflearningstatus != null) {
+			getMendixObject().setValue(context, MemberNames.SelfLearningStatus.toString(), selflearningstatus.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.SelfLearningStatus.toString(), null);
+		}
 	}
 
 	/**

@@ -6,6 +6,7 @@ package courseimportmidstage.proxies.microflows;
 
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
+import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public final class Microflows
 {
@@ -128,5 +129,25 @@ public final class Microflows
 				_courseMidPhaseImage
 			)
 			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_CourseMidStage_ContentRetrieveBuilder(
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseImportMidStage.DS_CourseMidStage_ContentRetrieve");
+		builder = builder.withParam("CourseMidPhase", _courseMidPhase);
+		return builder;
+	}
+
+	public static java.util.List<courseimportmidstage.proxies.ContentMidPhase> dS_CourseMidStage_ContentRetrieve(
+		IContext context,
+		courseimportmidstage.proxies.CourseMidPhase _courseMidPhase
+	)
+	{
+		Object result = dS_CourseMidStage_ContentRetrieveBuilder(
+				_courseMidPhase
+			)
+			.execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> courseimportmidstage.proxies.ContentMidPhase.initialize(context, obj));
 	}
 }

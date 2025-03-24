@@ -28,6 +28,7 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		PointsForCourse("PointsForCourse"),
 		StartDate("StartDate"),
 		DifficultyOfCourse("DifficultyOfCourse"),
+		ContentQuantity("ContentQuantity"),
 		CourseImage_Course("CourseManagement.CourseImage_Course"),
 		Course_User("CourseManagement.Course_User");
 
@@ -394,6 +395,42 @@ public class Course implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		} else {
 			getMendixObject().setValue(context, MemberNames.DifficultyOfCourse.toString(), null);
 		}
+	}
+
+	/**
+	 * @return value of ContentQuantity
+	 */
+	public final java.lang.Integer getContentQuantity()
+	{
+		return getContentQuantity(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ContentQuantity
+	 */
+	public final java.lang.Integer getContentQuantity(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.ContentQuantity.toString());
+	}
+
+	/**
+	 * Set value of ContentQuantity
+	 * @param contentquantity
+	 */
+	public final void setContentQuantity(java.lang.Integer contentquantity)
+	{
+		setContentQuantity(getContext(), contentquantity);
+	}
+
+	/**
+	 * Set value of ContentQuantity
+	 * @param context
+	 * @param contentquantity
+	 */
+	public final void setContentQuantity(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer contentquantity)
+	{
+		getMendixObject().setValue(context, MemberNames.ContentQuantity.toString(), contentquantity);
 	}
 
 	/**
