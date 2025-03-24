@@ -1,0 +1,8 @@
+[rtlauncher:container$] INFO Evictions for component 'project-userlib':
+Evicted D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\model\lib\userlib\commons-lang3-3.12.0.jar by D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\model\lib\userlib\commons-lang3-3.14.0.jar.
+Evicted D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\model\lib\userlib\commons-codec-1.15.jar by D:\UKTC PROGRAMMING\Schwarz-Onboardin-App\Employee_Onboarding_App\deployment\model\lib\userlib\commons-codec-1.17.0.jar.
+2025-03-24 23:49:19.033 INFO - M2EE: Added admin request handler '/prometheus' with servlet class 'com.mendix.metrics.prometheus.PrometheusServlet'
+[rtlauncher:container$] INFO Container start took 3383. Ready to accept admin requests.
+[containersupport:eventing] WARNING: Could not send event because no event handler was found for topic `com/mendix/events/runtime/shutdown`.
+
+
