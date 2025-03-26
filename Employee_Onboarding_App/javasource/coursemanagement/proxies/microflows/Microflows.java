@@ -231,6 +231,26 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_ContentCompletetion_RetrieveBuilder(
+		coursemanagement.proxies.Course _course
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.DS_ContentCompletetion_Retrieve");
+		builder = builder.withParam("Course", _course);
+		return builder;
+	}
+
+	public static coursemanagement.proxies.NP_CompletedContent dS_ContentCompletetion_Retrieve(
+		IContext context,
+		coursemanagement.proxies.Course _course
+	)
+	{
+		Object result = dS_ContentCompletetion_RetrieveBuilder(
+				_course
+			)
+			.execute(context);
+		return result == null ? null : coursemanagement.proxies.NP_CompletedContent.initialize(context, (IMendixObject) result);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_CourseAssignement_RetrieveBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CourseManagement.DS_CourseAssignement_Retrieve");
