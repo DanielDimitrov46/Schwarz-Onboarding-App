@@ -25,6 +25,7 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 		ContentDescription("ContentDescription"),
 		DateForContent("DateForContent"),
 		SelfLearningStatus("SelfLearningStatus"),
+		ContentNumber("ContentNumber"),
 		Content_Course("CourseManagement.Content_Course"),
 		Content_ContentImage("CourseManagement.Content_ContentImage");
 
@@ -274,6 +275,42 @@ public class Content implements com.mendix.systemwideinterfaces.core.IEntityProx
 		} else {
 			getMendixObject().setValue(context, MemberNames.SelfLearningStatus.toString(), null);
 		}
+	}
+
+	/**
+	 * @return value of ContentNumber
+	 */
+	public final java.lang.Integer getContentNumber()
+	{
+		return getContentNumber(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ContentNumber
+	 */
+	public final java.lang.Integer getContentNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.ContentNumber.toString());
+	}
+
+	/**
+	 * Set value of ContentNumber
+	 * @param contentnumber
+	 */
+	public final void setContentNumber(java.lang.Integer contentnumber)
+	{
+		setContentNumber(getContext(), contentnumber);
+	}
+
+	/**
+	 * Set value of ContentNumber
+	 * @param context
+	 * @param contentnumber
+	 */
+	public final void setContentNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer contentnumber)
+	{
+		getMendixObject().setValue(context, MemberNames.ContentNumber.toString(), contentnumber);
 	}
 
 	/**

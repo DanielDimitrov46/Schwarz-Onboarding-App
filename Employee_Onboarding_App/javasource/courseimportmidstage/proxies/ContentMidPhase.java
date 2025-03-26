@@ -24,6 +24,7 @@ public class ContentMidPhase implements com.mendix.systemwideinterfaces.core.IEn
 		ContentTitle("ContentTitle"),
 		ContentDescription("ContentDescription"),
 		ContentDate("ContentDate"),
+		ContentNumber("ContentNumber"),
 		ContentMidPhase_CourseMidPhase("CourseImportMidStage.ContentMidPhase_CourseMidPhase");
 
 		private final java.lang.String metaName;
@@ -227,6 +228,42 @@ public class ContentMidPhase implements com.mendix.systemwideinterfaces.core.IEn
 	public final void setContentDate(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date contentdate)
 	{
 		getMendixObject().setValue(context, MemberNames.ContentDate.toString(), contentdate);
+	}
+
+	/**
+	 * @return value of ContentNumber
+	 */
+	public final java.lang.Integer getContentNumber()
+	{
+		return getContentNumber(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ContentNumber
+	 */
+	public final java.lang.Integer getContentNumber(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.ContentNumber.toString());
+	}
+
+	/**
+	 * Set value of ContentNumber
+	 * @param contentnumber
+	 */
+	public final void setContentNumber(java.lang.Integer contentnumber)
+	{
+		setContentNumber(getContext(), contentnumber);
+	}
+
+	/**
+	 * Set value of ContentNumber
+	 * @param context
+	 * @param contentnumber
+	 */
+	public final void setContentNumber(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer contentnumber)
+	{
+		getMendixObject().setValue(context, MemberNames.ContentNumber.toString(), contentnumber);
 	}
 
 	/**
