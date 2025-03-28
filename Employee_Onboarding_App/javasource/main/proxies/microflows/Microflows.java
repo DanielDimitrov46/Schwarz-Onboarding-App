@@ -16,6 +16,17 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the Main module
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_Content_Schedule_RetrieveBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Main.DS_Content_Schedule_Retrieve");
+		return builder;
+	}
+
+	public static java.util.List<coursemanagement.proxies.Content> dS_Content_Schedule_Retrieve(IContext context)
+	{
+		Object result = dS_Content_Schedule_RetrieveBuilder().execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> coursemanagement.proxies.Content.initialize(context, obj));
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_CourseContent_Schedule_RetrieveBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Main.DS_CourseContent_Schedule_Retrieve");
